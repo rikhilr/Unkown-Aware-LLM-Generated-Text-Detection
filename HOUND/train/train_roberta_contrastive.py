@@ -26,7 +26,7 @@ from transformers import (
     set_seed,
 )
 from transformers.trainer_utils import get_last_checkpoint
-
+from labels import FAMILY_MAP
 
 MODEL_NAME = "microsoft/deberta-v3-base"
 MAX_LENGTH = 256
@@ -45,10 +45,7 @@ def compute_prototypes(model, dataset, le, device, batch_size=64):
     loader = torch.utils.data.DataLoader(
         dataset,
         batch_size=batch_size,
-        collate_fn=lambda x: {
-            k: torch.tensor([d[k] for d in x])
-            for k in x[0]
-        },
+        collate_fn=lambda x: {k: torch.tensor([d[k] for d in x]) for k in x[0]},
     )
 
     with torch.no_grad():
@@ -57,17 +54,12 @@ def compute_prototypes(model, dataset, le, device, batch_size=64):
             batch = {k: v.to(device) for k, v in batch.items()}
             out = model(**batch, output_hidden_states=True)
             # [CLS] token from last hidden state, L2-normalized
-            embs = F.normalize(
-                out.hidden_states[-1][:, 0, :].float(), dim=-1
-            ).cpu()
+            embs = F.normalize(out.hidden_states[-1][:, 0, :].float(), dim=-1).cpu()
             for emb, label in zip(embs, labels):
                 sums[label.item()] += emb
                 counts[label.item()] += 1
 
-    prototypes = {
-        le.classes_[k]: F.normalize(sums[k] / counts[k], dim=0)
-        for k in sums
-    }
+    prototypes = {le.classes_[k]: F.normalize(sums[k] / counts[k], dim=0) for k in sums}
     return prototypes
 
 
@@ -104,8 +96,18 @@ def train(run_name: str, use_wandb: bool = False):
     id2label = {i: c for i, c in enumerate(le.classes_)}
     label2id = {c: i for i, c in enumerate(le.classes_)}
 
+    family_le = LabelEncoder()
+    all_families = [FAMILY_MAP.get(m, "Unknown") for m in dataset["model"]]
+    family_le.fit(all_families)
+
     def encode_labels(batch):
-        return {"labels": le.transform(batch["model"]).tolist()}
+        model_ids = le.transform(batch["model"]).tolist()
+        family_names = [FAMILY_MAP.get(m, "Unknown") for m in batch["model"]]
+        family_ids = family_le.transform(family_names).tolist()
+        return {
+            "labels": model_ids,
+            "family_labels": family_ids,  # This fuels the PhantomHunter head
+        }
 
     dataset = dataset.map(encode_labels, batched=True)
 
@@ -152,20 +154,23 @@ def train(run_name: str, use_wandb: bool = False):
 
     class SupConWeightedTrainer(Trainer):
         def compute_loss(self, model, inputs, return_outputs=False, **kwargs):
-            labels = inputs.get("labels")
+            labels = inputs.get("labels")  # Specific Model (e.g., Llama-2-70b)
+
+            # New: Get the Family Label (e.g., Llama)
+            # You'll need to pass this in your dataset mapping
+            family_labels = inputs.get("family_labels")
+
             outputs = model(**inputs, output_hidden_states=True)
+            embeddings = F.normalize(outputs.hidden_states[-1][:, 0, :].float(), dim=-1)
 
-            # [CLS] embedding from last hidden state, L2-normalized
-            embeddings = outputs.hidden_states[-1][:, 0, :]
-            embeddings = F.normalize(embeddings.float(), dim=-1)
+            # 1. PhantomHunter Style: Contrastive loss on FAMILIES
+            con_loss = supcon_loss_fn(embeddings, family_labels)
 
-            # Supervised contrastive loss on embeddings
-            con_loss = supcon_loss_fn(embeddings, labels)
-
-            # Weighted cross-entropy on logits
+            # 2. Attribution: Weighted Cross-Entropy on specific MODELS
             w = class_weights.to(outputs.logits.device)
             ce_loss = F.cross_entropy(outputs.logits.float(), labels, weight=w)
 
+            # Joint optimization (50/50 balance)
             loss = 0.5 * con_loss + 0.5 * ce_loss
             return (loss, outputs) if return_outputs else loss
 
@@ -225,9 +230,7 @@ def train(run_name: str, use_wandb: bool = False):
 
         print("Computing prototypes on training set...")
         device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-        prototypes = compute_prototypes(
-            trainer.model, train_dataset, le, device
-        )
+        prototypes = compute_prototypes(trainer.model, train_dataset, le, device)
         joblib.dump(prototypes, final_dir / "prototypes.pkl")
         print(f"Saved {len(prototypes)} class prototypes.")
 
