@@ -130,6 +130,15 @@ def train(run_name: str, use_wandb: bool = False):
         )
 
     dataset = dataset.map(tokenize, batched=True)
+    columns_to_remove = ["generation", "model", "id", "subset", "length"]
+
+    # Only remove columns that actually exist in the dataset
+    actual_columns_to_remove = [
+        c for c in columns_to_remove if c in dataset.column_names
+    ]
+
+    dataset = dataset.remove_columns(actual_columns_to_remove)
+
     dataset = dataset.train_test_split(test_size=0.1, seed=42)
 
     train_dataset = dataset["train"].shuffle(seed=42)
@@ -194,7 +203,7 @@ def train(run_name: str, use_wandb: bool = False):
         per_device_train_batch_size=32,
         gradient_accumulation_steps=4,
         gradient_checkpointing=True,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         save_total_limit=2,
         load_best_model_at_end=True,
@@ -204,6 +213,7 @@ def train(run_name: str, use_wandb: bool = False):
         dataloader_pin_memory=True,
         bf16=True,
         ddp_find_unused_parameters=False,
+        label_names=["labels", "family_labels"],
         report_to="wandb" if use_wandb else "none",
     )
 
