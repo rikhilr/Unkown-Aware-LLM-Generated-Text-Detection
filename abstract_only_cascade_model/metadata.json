@@ -1,0 +1,77 @@
+{
+  "model_id": "StyleDistance/styledistance",
+  "dataset_id": "liamdugan/raid",
+  "dataset_splits": [
+    "train",
+    "extra"
+  ],
+  "known_models": [
+    "chatgpt",
+    "cohere",
+    "gpt3",
+    "gpt4",
+    "llama-chat",
+    "mpt",
+    "mpt-chat"
+  ],
+  "wild_unknown_models": [
+    "cohere-chat",
+    "gpt2"
+  ],
+  "val_unknown_models": [
+    "mistral"
+  ],
+  "test_unknown_models": [
+    "mistral-chat"
+  ],
+  "target_models": [
+    "human",
+    "chatgpt",
+    "gpt4",
+    "gpt3",
+    "gpt2",
+    "llama-chat",
+    "cohere",
+    "cohere-chat",
+    "mpt",
+    "mpt-chat",
+    "mistral",
+    "mistral-chat"
+  ],
+  "samples_per_label": 20000,
+  "include_adversarial": true,
+  "max_length": 512,
+  "embedding_layer": -2,
+  "energy_temperature": 1.0,
+  "feature_names": [
+    "min_dist",
+    "second_dist",
+    "dist_margin",
+    "norm_deepsvdd",
+    "energy",
+    "max_prob",
+    "entropy",
+    "prob_margin"
+  ],
+  "energy_threshold": -6.749516470798305,
+  "deepsvdd_threshold": 0.10670159650700432,
+  "rejector_threshold": 0.43669337096058625,
+  "primary_pipeline": "human_llm_then_htao_energy_gate_then_known_llm_classifier",
+  "primary_unknown_gate": "htao_energy",
+  "primary_energy_threshold": -6.699433559117744,
+  "primary_energy_gate_strategy": "max_known_false_unknown",
+  "primary_energy_gate_max_known_false_unknown": 0.18,
+  "primary_energy_gate_metrics": {
+    "primary_energy_gate/balanced_threshold": -6.749516470798305,
+    "primary_energy_gate/balanced_score": 0.5978455975356659,
+    "primary_energy_gate/capped_threshold": -6.699433559117744,
+    "primary_energy_gate/capped_known_false_unknown_rate": 0.1795316565481353,
+    "primary_energy_gate/capped_unknown_detection_rate": 0.3743957326221037,
+    "primary_energy_gate/chosen_threshold": -6.699433559117744,
+    "primary_energy_gate/chosen_known_false_unknown_rate_on_wild_val": 0.1795316565481353,
+    "primary_energy_gate/chosen_unknown_detection_rate_on_wild_val": 0.3743957326221037
+  },
+  "run_triage_ablation": false,
+  "human_ood_threshold": 0.03680339298750224,
+  "svdd_radius_quantile": 0.95
+}

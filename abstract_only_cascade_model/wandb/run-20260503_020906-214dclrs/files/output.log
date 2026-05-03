@@ -1,0 +1,771 @@
+2026-05-03 02:09:07 W&B initialized in online mode. Run dir: open_set_detector/wandb/run-20260503_020906-214dclrs/files
+2026-05-03 02:09:07 ===== CHTC / CUDA diagnostics =====
+2026-05-03 02:09:07 CUDA_VISIBLE_DEVICES=GPU-ca48bd26-8050-1d72-65bb-be9bc1469039
+2026-05-03 02:09:07 torch version=2.5.1+cu124
+2026-05-03 02:09:07 torch cuda available=True
+2026-05-03 02:09:07 torch cuda device count=1
+2026-05-03 02:09:07 device name=NVIDIA L40S
+2026-05-03 02:09:07 Collecting RAID rows with stratified label quotas.
+2026-05-03 02:09:07 Target labels: ['human', 'chatgpt', 'gpt4', 'gpt3', 'gpt2', 'llama-chat', 'cohere', 'cohere-chat', 'mpt', 'mpt-chat', 'mistral', 'mistral-chat']
+2026-05-03 02:09:07 samples_per_label=20000; num_samples=-1
+2026-05-03 02:09:07 Opening HF dataset liamdugan/raid, split=train, streaming=True
+2026-05-03 02:09:08 Opening HF dataset liamdugan/raid, split=extra, streaming=True
+2026-05-03 02:09:13 Collected 500 rows after scanning 500. Counts: {'mpt-chat': 79, 'mpt': 94, 'llama-chat': 89, 'gpt2': 76, 'human': 28, 'mistral-chat': 61, 'mistral': 73}
+2026-05-03 02:09:13 Collected 1000 rows after scanning 1000. Counts: {'mpt-chat': 161, 'mpt': 177, 'llama-chat': 167, 'gpt2': 142, 'human': 74, 'mistral-chat': 134, 'mistral': 145}
+2026-05-03 02:09:13 Collected 1500 rows after scanning 1500. Counts: {'mpt-chat': 234, 'mpt': 239, 'llama-chat': 249, 'gpt2': 230, 'human': 116, 'mistral-chat': 196, 'mistral': 236}
+2026-05-03 02:09:13 Collected 2000 rows after scanning 2000. Counts: {'mpt-chat': 307, 'mpt': 323, 'llama-chat': 330, 'gpt2': 298, 'human': 161, 'mistral-chat': 272, 'mistral': 309}
+2026-05-03 02:09:13 Collected 2500 rows after scanning 2500. Counts: {'mpt-chat': 382, 'mpt': 396, 'llama-chat': 414, 'gpt2': 379, 'human': 200, 'mistral-chat': 350, 'mistral': 379}
+2026-05-03 02:09:13 Collected 3000 rows after scanning 3000. Counts: {'mpt-chat': 456, 'mpt': 476, 'llama-chat': 487, 'gpt2': 462, 'human': 239, 'mistral-chat': 427, 'mistral': 453}
+2026-05-03 02:09:13 Collected 3500 rows after scanning 3500. Counts: {'mpt-chat': 524, 'mpt': 554, 'llama-chat': 566, 'gpt2': 540, 'human': 279, 'mistral-chat': 505, 'mistral': 532}
+2026-05-03 02:09:13 Collected 4000 rows after scanning 4000. Counts: {'mpt-chat': 596, 'mpt': 637, 'llama-chat': 638, 'gpt2': 615, 'human': 324, 'mistral-chat': 575, 'mistral': 615}
+2026-05-03 02:09:13 Collected 4500 rows after scanning 4500. Counts: {'mpt-chat': 685, 'mpt': 705, 'llama-chat': 716, 'gpt2': 693, 'human': 360, 'mistral-chat': 647, 'mistral': 694}
+2026-05-03 02:09:13 Collected 5000 rows after scanning 5000. Counts: {'mpt-chat': 764, 'mpt': 774, 'llama-chat': 809, 'gpt2': 766, 'human': 406, 'mistral-chat': 719, 'mistral': 762}
+2026-05-03 02:09:13 Collected 5500 rows after scanning 5500. Counts: {'mpt-chat': 848, 'mpt': 847, 'llama-chat': 890, 'gpt2': 843, 'human': 444, 'mistral-chat': 793, 'mistral': 835}
+2026-05-03 02:09:13 Collected 6000 rows after scanning 6000. Counts: {'mpt-chat': 916, 'mpt': 932, 'llama-chat': 969, 'gpt2': 910, 'human': 484, 'mistral-chat': 890, 'mistral': 899}
+2026-05-03 02:09:13 Collected 6500 rows after scanning 6500. Counts: {'mpt-chat': 984, 'mpt': 1012, 'llama-chat': 1056, 'gpt2': 978, 'human': 534, 'mistral-chat': 960, 'mistral': 976}
+2026-05-03 02:09:13 Collected 7000 rows after scanning 7000. Counts: {'mpt-chat': 1056, 'mpt': 1088, 'llama-chat': 1136, 'gpt2': 1067, 'human': 579, 'mistral-chat': 1028, 'mistral': 1046}
+2026-05-03 02:09:13 Collected 7500 rows after scanning 7500. Counts: {'mpt-chat': 1128, 'mpt': 1180, 'llama-chat': 1211, 'gpt2': 1142, 'human': 617, 'mistral-chat': 1099, 'mistral': 1123}
+2026-05-03 02:09:13 Collected 8000 rows after scanning 8000. Counts: {'mpt-chat': 1213, 'mpt': 1264, 'llama-chat': 1294, 'gpt2': 1207, 'human': 657, 'mistral-chat': 1169, 'mistral': 1196}
+2026-05-03 02:09:13 Collected 8500 rows after scanning 8500. Counts: {'mpt-chat': 1302, 'mpt': 1341, 'llama-chat': 1371, 'gpt2': 1280, 'human': 686, 'mistral-chat': 1237, 'mistral': 1283}
+2026-05-03 02:09:13 Collected 9000 rows after scanning 9000. Counts: {'mpt-chat': 1381, 'mpt': 1423, 'llama-chat': 1451, 'gpt2': 1355, 'human': 727, 'mistral-chat': 1312, 'mistral': 1351}
+2026-05-03 02:09:13 Collected 9500 rows after scanning 9500. Counts: {'mpt-chat': 1451, 'mpt': 1495, 'llama-chat': 1516, 'gpt2': 1439, 'human': 766, 'mistral-chat': 1397, 'mistral': 1436}
+2026-05-03 02:09:13 Collected 10000 rows after scanning 10000. Counts: {'mpt-chat': 1525, 'mpt': 1572, 'llama-chat': 1598, 'gpt2': 1514, 'human': 798, 'mistral-chat': 1478, 'mistral': 1515}
+2026-05-03 02:09:14 Collected 10500 rows after scanning 10500. Counts: {'mpt-chat': 1591, 'mpt': 1654, 'llama-chat': 1669, 'gpt2': 1590, 'human': 840, 'mistral-chat': 1564, 'mistral': 1592}
+2026-05-03 02:09:14 Collected 11000 rows after scanning 11000. Counts: {'mpt-chat': 1668, 'mpt': 1723, 'llama-chat': 1762, 'gpt2': 1667, 'human': 878, 'mistral-chat': 1644, 'mistral': 1658}
+2026-05-03 02:09:14 Collected 11500 rows after scanning 11500. Counts: {'mpt-chat': 1746, 'mpt': 1796, 'llama-chat': 1834, 'gpt2': 1728, 'human': 918, 'mistral-chat': 1734, 'mistral': 1744}
+2026-05-03 02:09:14 Collected 12000 rows after scanning 12000. Counts: {'mpt-chat': 1812, 'mpt': 1878, 'llama-chat': 1920, 'gpt2': 1808, 'human': 953, 'mistral-chat': 1798, 'mistral': 1831}
+2026-05-03 02:09:14 Collected 12500 rows after scanning 12500. Counts: {'mpt-chat': 1888, 'mpt': 1949, 'llama-chat': 1998, 'gpt2': 1878, 'human': 1002, 'mistral-chat': 1867, 'mistral': 1918}
+2026-05-03 02:09:14 Collected 13000 rows after scanning 13000. Counts: {'mpt-chat': 1968, 'mpt': 2017, 'llama-chat': 2078, 'gpt2': 1948, 'human': 1057, 'mistral-chat': 1942, 'mistral': 1990}
+2026-05-03 02:09:14 Collected 13500 rows after scanning 13500. Counts: {'mpt-chat': 2043, 'mpt': 2099, 'llama-chat': 2164, 'gpt2': 2022, 'human': 1098, 'mistral-chat': 2014, 'mistral': 2060}
+2026-05-03 02:09:14 Collected 14000 rows after scanning 14000. Counts: {'mpt-chat': 2128, 'mpt': 2169, 'llama-chat': 2235, 'gpt2': 2096, 'human': 1136, 'mistral-chat': 2096, 'mistral': 2140}
+2026-05-03 02:09:14 Collected 14500 rows after scanning 14500. Counts: {'mpt-chat': 2208, 'mpt': 2244, 'llama-chat': 2313, 'gpt2': 2178, 'human': 1177, 'mistral-chat': 2177, 'mistral': 2203}
+2026-05-03 02:09:14 Collected 15000 rows after scanning 15000. Counts: {'mpt-chat': 2289, 'mpt': 2322, 'llama-chat': 2389, 'gpt2': 2257, 'human': 1209, 'mistral-chat': 2254, 'mistral': 2280}
+2026-05-03 02:09:14 Collected 15500 rows after scanning 15500. Counts: {'mpt-chat': 2375, 'mpt': 2397, 'llama-chat': 2469, 'gpt2': 2338, 'human': 1249, 'mistral-chat': 2314, 'mistral': 2358}
+2026-05-03 02:09:14 Collected 16000 rows after scanning 16000. Counts: {'mpt-chat': 2455, 'mpt': 2468, 'llama-chat': 2539, 'gpt2': 2421, 'human': 1289, 'mistral-chat': 2400, 'mistral': 2428}
+2026-05-03 02:09:14 Collected 16500 rows after scanning 16500. Counts: {'mpt-chat': 2546, 'mpt': 2543, 'llama-chat': 2612, 'gpt2': 2498, 'human': 1331, 'mistral-chat': 2470, 'mistral': 2500}
+2026-05-03 02:09:14 Collected 17000 rows after scanning 17000. Counts: {'mpt-chat': 2612, 'mpt': 2624, 'llama-chat': 2691, 'gpt2': 2570, 'human': 1375, 'mistral-chat': 2550, 'mistral': 2578}
+2026-05-03 02:09:14 Collected 17500 rows after scanning 17500. Counts: {'mpt-chat': 2689, 'mpt': 2684, 'llama-chat': 2783, 'gpt2': 2631, 'human': 1421, 'mistral-chat': 2626, 'mistral': 2666}
+2026-05-03 02:09:14 Collected 18000 rows after scanning 18000. Counts: {'mpt-chat': 2775, 'mpt': 2755, 'llama-chat': 2857, 'gpt2': 2719, 'human': 1456, 'mistral-chat': 2690, 'mistral': 2748}
+2026-05-03 02:09:14 Collected 18500 rows after scanning 18500. Counts: {'mpt-chat': 2862, 'mpt': 2843, 'llama-chat': 2935, 'gpt2': 2798, 'human': 1491, 'mistral-chat': 2753, 'mistral': 2818}
+2026-05-03 02:09:14 Collected 19000 rows after scanning 19000. Counts: {'mpt-chat': 2945, 'mpt': 2934, 'llama-chat': 3003, 'gpt2': 2874, 'human': 1531, 'mistral-chat': 2813, 'mistral': 2900}
+2026-05-03 02:09:14 Collected 19500 rows after scanning 19500. Counts: {'mpt-chat': 3022, 'mpt': 3010, 'llama-chat': 3091, 'gpt2': 2948, 'human': 1576, 'mistral-chat': 2884, 'mistral': 2969}
+2026-05-03 02:09:14 Collected 20000 rows after scanning 20000. Counts: {'mpt-chat': 3098, 'mpt': 3092, 'llama-chat': 3170, 'gpt2': 3024, 'human': 1607, 'mistral-chat': 2964, 'mistral': 3045}
+2026-05-03 02:09:14 Collected 20500 rows after scanning 20500. Counts: {'mpt-chat': 3178, 'mpt': 3168, 'llama-chat': 3234, 'gpt2': 3117, 'human': 1653, 'mistral-chat': 3029, 'mistral': 3121}
+2026-05-03 02:09:14 Collected 21000 rows after scanning 21000. Counts: {'mpt-chat': 3263, 'mpt': 3247, 'llama-chat': 3325, 'gpt2': 3177, 'human': 1688, 'mistral-chat': 3104, 'mistral': 3196}
+2026-05-03 02:09:14 Collected 21500 rows after scanning 21500. Counts: {'mpt-chat': 3344, 'mpt': 3328, 'llama-chat': 3398, 'gpt2': 3241, 'human': 1729, 'mistral-chat': 3176, 'mistral': 3284}
+2026-05-03 02:09:14 Collected 22000 rows after scanning 22000. Counts: {'mpt-chat': 3419, 'mpt': 3404, 'llama-chat': 3491, 'gpt2': 3318, 'human': 1775, 'mistral-chat': 3238, 'mistral': 3355}
+2026-05-03 02:09:14 Collected 22500 rows after scanning 22500. Counts: {'mpt-chat': 3491, 'mpt': 3474, 'llama-chat': 3559, 'gpt2': 3392, 'human': 1820, 'mistral-chat': 3317, 'mistral': 3447}
+2026-05-03 02:09:14 Collected 23000 rows after scanning 23000. Counts: {'mpt-chat': 3554, 'mpt': 3545, 'llama-chat': 3649, 'gpt2': 3472, 'human': 1864, 'mistral-chat': 3403, 'mistral': 3513}
+2026-05-03 02:09:14 Collected 23500 rows after scanning 23500. Counts: {'mpt-chat': 3633, 'mpt': 3614, 'llama-chat': 3736, 'gpt2': 3549, 'human': 1901, 'mistral-chat': 3472, 'mistral': 3595}
+2026-05-03 02:09:14 Collected 24000 rows after scanning 24000. Counts: {'mpt-chat': 3718, 'mpt': 3693, 'llama-chat': 3813, 'gpt2': 3620, 'human': 1945, 'mistral-chat': 3542, 'mistral': 3669}
+2026-05-03 02:09:14 Collected 24500 rows after scanning 24500. Counts: {'mpt-chat': 3806, 'mpt': 3764, 'llama-chat': 3903, 'gpt2': 3691, 'human': 1970, 'mistral-chat': 3612, 'mistral': 3754}
+2026-05-03 02:09:14 Collected 25000 rows after scanning 25000. Counts: {'mpt-chat': 3889, 'mpt': 3848, 'llama-chat': 3972, 'gpt2': 3763, 'human': 2013, 'mistral-chat': 3691, 'mistral': 3824}
+2026-05-03 02:09:14 Collected 25500 rows after scanning 25500. Counts: {'mpt-chat': 3969, 'mpt': 3932, 'llama-chat': 4048, 'gpt2': 3835, 'human': 2042, 'mistral-chat': 3770, 'mistral': 3904}
+2026-05-03 02:09:14 Collected 26000 rows after scanning 26000. Counts: {'mpt-chat': 4043, 'mpt': 4010, 'llama-chat': 4139, 'gpt2': 3915, 'human': 2077, 'mistral-chat': 3839, 'mistral': 3977}
+2026-05-03 02:09:14 Collected 26500 rows after scanning 26500. Counts: {'mpt-chat': 4121, 'mpt': 4084, 'llama-chat': 4224, 'gpt2': 3991, 'human': 2121, 'mistral-chat': 3915, 'mistral': 4044}
+2026-05-03 02:09:14 Collected 27000 rows after scanning 27000. Counts: {'mpt-chat': 4190, 'mpt': 4158, 'llama-chat': 4310, 'gpt2': 4064, 'human': 2160, 'mistral-chat': 3977, 'mistral': 4141}
+2026-05-03 02:09:14 Collected 27500 rows after scanning 27500. Counts: {'mpt-chat': 4284, 'mpt': 4231, 'llama-chat': 4392, 'gpt2': 4134, 'human': 2194, 'mistral-chat': 4047, 'mistral': 4218}
+2026-05-03 02:09:14 Collected 28000 rows after scanning 28000. Counts: {'mpt-chat': 4361, 'mpt': 4315, 'llama-chat': 4467, 'gpt2': 4225, 'human': 2239, 'mistral-chat': 4115, 'mistral': 4278}
+2026-05-03 02:09:14 Collected 28500 rows after scanning 28500. Counts: {'mpt-chat': 4426, 'mpt': 4396, 'llama-chat': 4528, 'gpt2': 4320, 'human': 2281, 'mistral-chat': 4189, 'mistral': 4360}
+2026-05-03 02:09:14 Collected 29000 rows after scanning 29000. Counts: {'mpt-chat': 4493, 'mpt': 4471, 'llama-chat': 4616, 'gpt2': 4397, 'human': 2314, 'mistral-chat': 4270, 'mistral': 4439}
+2026-05-03 02:09:14 Collected 29500 rows after scanning 29500. Counts: {'mpt-chat': 4564, 'mpt': 4547, 'llama-chat': 4695, 'gpt2': 4465, 'human': 2357, 'mistral-chat': 4354, 'mistral': 4518}
+2026-05-03 02:09:14 Collected 30000 rows after scanning 30000. Counts: {'mpt-chat': 4638, 'mpt': 4622, 'llama-chat': 4781, 'gpt2': 4531, 'human': 2392, 'mistral-chat': 4439, 'mistral': 4597}
+2026-05-03 02:09:15 Collected 30500 rows after scanning 30500. Counts: {'mpt-chat': 4708, 'mpt': 4698, 'llama-chat': 4860, 'gpt2': 4620, 'human': 2420, 'mistral-chat': 4514, 'mistral': 4680}
+2026-05-03 02:09:15 Collected 31000 rows after scanning 31000. Counts: {'mpt-chat': 4795, 'mpt': 4769, 'llama-chat': 4942, 'gpt2': 4679, 'human': 2452, 'mistral-chat': 4595, 'mistral': 4768}
+2026-05-03 02:09:15 Collected 31500 rows after scanning 31500. Counts: {'mpt-chat': 4888, 'mpt': 4843, 'llama-chat': 5007, 'gpt2': 4760, 'human': 2487, 'mistral-chat': 4669, 'mistral': 4846}
+2026-05-03 02:09:15 Collected 32000 rows after scanning 32000. Counts: {'mpt-chat': 4980, 'mpt': 4913, 'llama-chat': 5085, 'gpt2': 4842, 'human': 2520, 'mistral-chat': 4743, 'mistral': 4917}
+2026-05-03 02:09:15 Collected 32500 rows after scanning 32500. Counts: {'mpt-chat': 5067, 'mpt': 4979, 'llama-chat': 5178, 'gpt2': 4909, 'human': 2554, 'mistral-chat': 4817, 'mistral': 4996}
+2026-05-03 02:09:15 Collected 33000 rows after scanning 33000. Counts: {'mpt-chat': 5141, 'mpt': 5067, 'llama-chat': 5261, 'gpt2': 4976, 'human': 2600, 'mistral-chat': 4891, 'mistral': 5064}
+2026-05-03 02:09:15 Collected 33500 rows after scanning 33500. Counts: {'mpt-chat': 5224, 'mpt': 5147, 'llama-chat': 5336, 'gpt2': 5046, 'human': 2635, 'mistral-chat': 4962, 'mistral': 5150}
+2026-05-03 02:09:15 Collected 34000 rows after scanning 34000. Counts: {'mpt-chat': 5295, 'mpt': 5231, 'llama-chat': 5421, 'gpt2': 5117, 'human': 2669, 'mistral-chat': 5040, 'mistral': 5227}
+2026-05-03 02:09:15 Collected 34500 rows after scanning 34500. Counts: {'mpt-chat': 5358, 'mpt': 5304, 'llama-chat': 5496, 'gpt2': 5186, 'human': 2717, 'mistral-chat': 5137, 'mistral': 5302}
+2026-05-03 02:09:15 Collected 35000 rows after scanning 35000. Counts: {'mpt-chat': 5442, 'mpt': 5369, 'llama-chat': 5571, 'gpt2': 5276, 'human': 2746, 'mistral-chat': 5214, 'mistral': 5382}
+2026-05-03 02:09:15 Collected 35500 rows after scanning 35500. Counts: {'mpt-chat': 5515, 'mpt': 5443, 'llama-chat': 5662, 'gpt2': 5359, 'human': 2783, 'mistral-chat': 5288, 'mistral': 5450}
+2026-05-03 02:09:15 Collected 36000 rows after scanning 36000. Counts: {'mpt-chat': 5589, 'mpt': 5521, 'llama-chat': 5747, 'gpt2': 5425, 'human': 2829, 'mistral-chat': 5357, 'mistral': 5532}
+2026-05-03 02:09:15 Collected 36500 rows after scanning 36500. Counts: {'mpt-chat': 5673, 'mpt': 5601, 'llama-chat': 5822, 'gpt2': 5508, 'human': 2861, 'mistral-chat': 5423, 'mistral': 5612}
+2026-05-03 02:09:15 Collected 37000 rows after scanning 37000. Counts: {'mpt-chat': 5746, 'mpt': 5673, 'llama-chat': 5903, 'gpt2': 5594, 'human': 2887, 'mistral-chat': 5489, 'mistral': 5708}
+2026-05-03 02:09:15 Collected 37500 rows after scanning 37500. Counts: {'mpt-chat': 5821, 'mpt': 5754, 'llama-chat': 5976, 'gpt2': 5675, 'human': 2924, 'mistral-chat': 5567, 'mistral': 5783}
+2026-05-03 02:09:15 Collected 38000 rows after scanning 38000. Counts: {'mpt-chat': 5891, 'mpt': 5825, 'llama-chat': 6040, 'gpt2': 5753, 'human': 2961, 'mistral-chat': 5654, 'mistral': 5876}
+2026-05-03 02:09:15 Collected 38500 rows after scanning 38500. Counts: {'mpt-chat': 5959, 'mpt': 5921, 'llama-chat': 6119, 'gpt2': 5815, 'human': 3008, 'mistral-chat': 5715, 'mistral': 5963}
+2026-05-03 02:09:15 Collected 39000 rows after scanning 39000. Counts: {'mpt-chat': 6027, 'mpt': 6004, 'llama-chat': 6191, 'gpt2': 5895, 'human': 3053, 'mistral-chat': 5786, 'mistral': 6044}
+2026-05-03 02:09:15 Collected 39500 rows after scanning 39500. Counts: {'mpt-chat': 6112, 'mpt': 6084, 'llama-chat': 6256, 'gpt2': 5985, 'human': 3090, 'mistral-chat': 5859, 'mistral': 6114}
+2026-05-03 02:09:15 Collected 40000 rows after scanning 40000. Counts: {'mpt-chat': 6198, 'mpt': 6144, 'llama-chat': 6342, 'gpt2': 6065, 'human': 3125, 'mistral-chat': 5936, 'mistral': 6190}
+2026-05-03 02:09:16 Collected 40500 rows after scanning 40500. Counts: {'mpt-chat': 6270, 'mpt': 6214, 'llama-chat': 6413, 'gpt2': 6153, 'human': 3165, 'mistral-chat': 6017, 'mistral': 6268}
+2026-05-03 02:09:16 Collected 41000 rows after scanning 41000. Counts: {'mpt-chat': 6349, 'mpt': 6309, 'llama-chat': 6491, 'gpt2': 6226, 'human': 3201, 'mistral-chat': 6086, 'mistral': 6338}
+2026-05-03 02:09:16 Collected 41500 rows after scanning 41500. Counts: {'mpt-chat': 6430, 'mpt': 6387, 'llama-chat': 6582, 'gpt2': 6298, 'human': 3236, 'mistral-chat': 6160, 'mistral': 6407}
+2026-05-03 02:09:16 Collected 42000 rows after scanning 42000. Counts: {'mpt-chat': 6503, 'mpt': 6467, 'llama-chat': 6666, 'gpt2': 6378, 'human': 3267, 'mistral-chat': 6231, 'mistral': 6488}
+2026-05-03 02:09:16 Collected 42500 rows after scanning 42500. Counts: {'mpt-chat': 6590, 'mpt': 6543, 'llama-chat': 6747, 'gpt2': 6461, 'human': 3307, 'mistral-chat': 6298, 'mistral': 6554}
+2026-05-03 02:09:16 Collected 43000 rows after scanning 43000. Counts: {'mpt-chat': 6682, 'mpt': 6619, 'llama-chat': 6829, 'gpt2': 6541, 'human': 3339, 'mistral-chat': 6368, 'mistral': 6622}
+2026-05-03 02:09:16 Collected 43500 rows after scanning 43500. Counts: {'mpt-chat': 6763, 'mpt': 6694, 'llama-chat': 6891, 'gpt2': 6616, 'human': 3378, 'mistral-chat': 6445, 'mistral': 6713}
+2026-05-03 02:09:16 Collected 44000 rows after scanning 44000. Counts: {'mpt-chat': 6846, 'mpt': 6757, 'llama-chat': 6968, 'gpt2': 6712, 'human': 3410, 'mistral-chat': 6526, 'mistral': 6781}
+2026-05-03 02:09:16 Collected 44500 rows after scanning 44500. Counts: {'mpt-chat': 6921, 'mpt': 6833, 'llama-chat': 7040, 'gpt2': 6782, 'human': 3445, 'mistral-chat': 6613, 'mistral': 6866}
+2026-05-03 02:09:16 Collected 45000 rows after scanning 45000. Counts: {'mpt-chat': 6989, 'mpt': 6907, 'llama-chat': 7112, 'gpt2': 6866, 'human': 3474, 'mistral-chat': 6694, 'mistral': 6958}
+2026-05-03 02:09:16 Collected 45500 rows after scanning 45500. Counts: {'mpt-chat': 7066, 'mpt': 6988, 'llama-chat': 7188, 'gpt2': 6948, 'human': 3515, 'mistral-chat': 6771, 'mistral': 7024}
+2026-05-03 02:09:16 Collected 46000 rows after scanning 46000. Counts: {'mpt-chat': 7147, 'mpt': 7054, 'llama-chat': 7263, 'gpt2': 7031, 'human': 3551, 'mistral-chat': 6844, 'mistral': 7110}
+2026-05-03 02:09:16 Collected 46500 rows after scanning 46500. Counts: {'mpt-chat': 7229, 'mpt': 7128, 'llama-chat': 7346, 'gpt2': 7100, 'human': 3595, 'mistral-chat': 6909, 'mistral': 7193}
+2026-05-03 02:09:16 Collected 47000 rows after scanning 47000. Counts: {'mpt-chat': 7293, 'mpt': 7221, 'llama-chat': 7426, 'gpt2': 7177, 'human': 3625, 'mistral-chat': 6989, 'mistral': 7269}
+2026-05-03 02:09:16 Collected 47500 rows after scanning 47500. Counts: {'mpt-chat': 7364, 'mpt': 7308, 'llama-chat': 7513, 'gpt2': 7241, 'human': 3679, 'mistral-chat': 7058, 'mistral': 7337}
+2026-05-03 02:09:16 Collected 48000 rows after scanning 48000. Counts: {'mpt-chat': 7437, 'mpt': 7374, 'llama-chat': 7596, 'gpt2': 7312, 'human': 3715, 'mistral-chat': 7143, 'mistral': 7423}
+2026-05-03 02:09:16 Collected 48500 rows after scanning 48500. Counts: {'mpt-chat': 7513, 'mpt': 7454, 'llama-chat': 7682, 'gpt2': 7386, 'human': 3755, 'mistral-chat': 7218, 'mistral': 7492}
+2026-05-03 02:09:16 Collected 49000 rows after scanning 49000. Counts: {'mpt-chat': 7589, 'mpt': 7543, 'llama-chat': 7747, 'gpt2': 7466, 'human': 3787, 'mistral-chat': 7290, 'mistral': 7578}
+2026-05-03 02:09:16 Collected 49500 rows after scanning 49500. Counts: {'mpt-chat': 7657, 'mpt': 7616, 'llama-chat': 7827, 'gpt2': 7567, 'human': 3831, 'mistral-chat': 7352, 'mistral': 7650}
+2026-05-03 02:09:16 Collected 50000 rows after scanning 50000. Counts: {'mpt-chat': 7747, 'mpt': 7702, 'llama-chat': 7906, 'gpt2': 7640, 'human': 3866, 'mistral-chat': 7419, 'mistral': 7720}
+2026-05-03 02:09:16 Collected 50500 rows after scanning 50500. Counts: {'mpt-chat': 7828, 'mpt': 7769, 'llama-chat': 7990, 'gpt2': 7710, 'human': 3894, 'mistral-chat': 7509, 'mistral': 7800}
+2026-05-03 02:09:16 Collected 51000 rows after scanning 51000. Counts: {'mpt-chat': 7899, 'mpt': 7838, 'llama-chat': 8053, 'gpt2': 7783, 'human': 3937, 'mistral-chat': 7604, 'mistral': 7886}
+2026-05-03 02:09:16 Collected 51500 rows after scanning 51500. Counts: {'mpt-chat': 7985, 'mpt': 7910, 'llama-chat': 8145, 'gpt2': 7852, 'human': 3972, 'mistral-chat': 7680, 'mistral': 7956}
+2026-05-03 02:09:16 Collected 52000 rows after scanning 52000. Counts: {'mpt-chat': 8074, 'mpt': 7974, 'llama-chat': 8234, 'gpt2': 7925, 'human': 4011, 'mistral-chat': 7750, 'mistral': 8032}
+2026-05-03 02:09:16 Collected 52500 rows after scanning 52500. Counts: {'mpt-chat': 8138, 'mpt': 8042, 'llama-chat': 8314, 'gpt2': 7993, 'human': 4064, 'mistral-chat': 7825, 'mistral': 8124}
+2026-05-03 02:09:16 Collected 53000 rows after scanning 53000. Counts: {'mpt-chat': 8204, 'mpt': 8121, 'llama-chat': 8400, 'gpt2': 8069, 'human': 4112, 'mistral-chat': 7899, 'mistral': 8195}
+2026-05-03 02:09:16 Collected 53500 rows after scanning 53500. Counts: {'mpt-chat': 8267, 'mpt': 8210, 'llama-chat': 8481, 'gpt2': 8144, 'human': 4150, 'mistral-chat': 7992, 'mistral': 8256}
+2026-05-03 02:09:16 Collected 54000 rows after scanning 54000. Counts: {'mpt-chat': 8337, 'mpt': 8298, 'llama-chat': 8561, 'gpt2': 8222, 'human': 4198, 'mistral-chat': 8067, 'mistral': 8317}
+2026-05-03 02:09:16 Collected 54500 rows after scanning 54500. Counts: {'mpt-chat': 8419, 'mpt': 8374, 'llama-chat': 8626, 'gpt2': 8301, 'human': 4244, 'mistral-chat': 8137, 'mistral': 8399}
+2026-05-03 02:09:16 Collected 55000 rows after scanning 55000. Counts: {'mpt-chat': 8489, 'mpt': 8464, 'llama-chat': 8695, 'gpt2': 8390, 'human': 4277, 'mistral-chat': 8208, 'mistral': 8477}
+2026-05-03 02:09:16 Collected 55500 rows after scanning 55500. Counts: {'mpt-chat': 8595, 'mpt': 8547, 'llama-chat': 8754, 'gpt2': 8467, 'human': 4311, 'mistral-chat': 8280, 'mistral': 8546}
+2026-05-03 02:09:16 Collected 56000 rows after scanning 56000. Counts: {'mpt-chat': 8676, 'mpt': 8626, 'llama-chat': 8826, 'gpt2': 8541, 'human': 4354, 'mistral-chat': 8349, 'mistral': 8628}
+2026-05-03 02:09:16 Collected 56500 rows after scanning 56500. Counts: {'mpt-chat': 8740, 'mpt': 8715, 'llama-chat': 8903, 'gpt2': 8618, 'human': 4396, 'mistral-chat': 8419, 'mistral': 8709}
+2026-05-03 02:09:16 Collected 57000 rows after scanning 57000. Counts: {'mpt-chat': 8817, 'mpt': 8790, 'llama-chat': 8973, 'gpt2': 8704, 'human': 4440, 'mistral-chat': 8498, 'mistral': 8778}
+2026-05-03 02:09:16 Collected 57500 rows after scanning 57500. Counts: {'mpt-chat': 8900, 'mpt': 8856, 'llama-chat': 9045, 'gpt2': 8793, 'human': 4471, 'mistral-chat': 8567, 'mistral': 8868}
+2026-05-03 02:09:16 Collected 58000 rows after scanning 58000. Counts: {'mpt-chat': 8966, 'mpt': 8934, 'llama-chat': 9130, 'gpt2': 8866, 'human': 4511, 'mistral-chat': 8650, 'mistral': 8943}
+2026-05-03 02:09:16 Collected 58500 rows after scanning 58500. Counts: {'mpt-chat': 9039, 'mpt': 9016, 'llama-chat': 9207, 'gpt2': 8939, 'human': 4546, 'mistral-chat': 8724, 'mistral': 9029}
+2026-05-03 02:09:16 Collected 59000 rows after scanning 59000. Counts: {'mpt-chat': 9111, 'mpt': 9102, 'llama-chat': 9282, 'gpt2': 9029, 'human': 4580, 'mistral-chat': 8798, 'mistral': 9098}
+2026-05-03 02:09:16 Collected 59500 rows after scanning 59500. Counts: {'mpt-chat': 9178, 'mpt': 9180, 'llama-chat': 9373, 'gpt2': 9097, 'human': 4622, 'mistral-chat': 8869, 'mistral': 9181}
+2026-05-03 02:09:16 Collected 60000 rows after scanning 60000. Counts: {'mpt-chat': 9244, 'mpt': 9248, 'llama-chat': 9452, 'gpt2': 9172, 'human': 4669, 'mistral-chat': 8951, 'mistral': 9264}
+2026-05-03 02:09:17 Collected 60500 rows after scanning 60500. Counts: {'mpt-chat': 9317, 'mpt': 9318, 'llama-chat': 9531, 'gpt2': 9236, 'human': 4707, 'mistral-chat': 9047, 'mistral': 9344}
+2026-05-03 02:09:17 Collected 61000 rows after scanning 61000. Counts: {'mpt-chat': 9404, 'mpt': 9399, 'llama-chat': 9604, 'gpt2': 9311, 'human': 4745, 'mistral-chat': 9115, 'mistral': 9422}
+2026-05-03 02:09:17 Collected 61500 rows after scanning 61500. Counts: {'mpt-chat': 9473, 'mpt': 9466, 'llama-chat': 9679, 'gpt2': 9383, 'human': 4799, 'mistral-chat': 9198, 'mistral': 9502}
+2026-05-03 02:09:17 Collected 62000 rows after scanning 62000. Counts: {'mpt-chat': 9542, 'mpt': 9535, 'llama-chat': 9767, 'gpt2': 9463, 'human': 4828, 'mistral-chat': 9292, 'mistral': 9573}
+2026-05-03 02:09:17 Collected 62500 rows after scanning 62500. Counts: {'mpt-chat': 9611, 'mpt': 9610, 'llama-chat': 9852, 'gpt2': 9552, 'human': 4873, 'mistral-chat': 9357, 'mistral': 9645}
+2026-05-03 02:09:17 Collected 63000 rows after scanning 63000. Counts: {'mpt-chat': 9695, 'mpt': 9688, 'llama-chat': 9940, 'gpt2': 9630, 'human': 4915, 'mistral-chat': 9419, 'mistral': 9713}
+2026-05-03 02:09:17 Collected 63500 rows after scanning 63500. Counts: {'mpt-chat': 9764, 'mpt': 9763, 'llama-chat': 10030, 'gpt2': 9686, 'human': 4955, 'mistral-chat': 9509, 'mistral': 9793}
+2026-05-03 02:09:17 Collected 64000 rows after scanning 64000. Counts: {'mpt-chat': 9845, 'mpt': 9842, 'llama-chat': 10117, 'gpt2': 9754, 'human': 4986, 'mistral-chat': 9583, 'mistral': 9873}
+2026-05-03 02:09:17 Collected 64500 rows after scanning 64500. Counts: {'mpt-chat': 9931, 'mpt': 9924, 'llama-chat': 10186, 'gpt2': 9824, 'human': 5035, 'mistral-chat': 9660, 'mistral': 9940}
+2026-05-03 02:09:17 Collected 65000 rows after scanning 65000. Counts: {'mpt-chat': 9999, 'mpt': 10014, 'llama-chat': 10244, 'gpt2': 9926, 'human': 5073, 'mistral-chat': 9731, 'mistral': 10013}
+2026-05-03 02:09:17 Collected 65500 rows after scanning 65500. Counts: {'mpt-chat': 10084, 'mpt': 10088, 'llama-chat': 10318, 'gpt2': 9993, 'human': 5121, 'mistral-chat': 9796, 'mistral': 10100}
+2026-05-03 02:09:17 Collected 66000 rows after scanning 66000. Counts: {'mpt-chat': 10155, 'mpt': 10165, 'llama-chat': 10386, 'gpt2': 10067, 'human': 5164, 'mistral-chat': 9872, 'mistral': 10191}
+2026-05-03 02:09:17 Collected 66500 rows after scanning 66500. Counts: {'mpt-chat': 10228, 'mpt': 10237, 'llama-chat': 10469, 'gpt2': 10147, 'human': 5196, 'mistral-chat': 9961, 'mistral': 10262}
+2026-05-03 02:09:17 Collected 67000 rows after scanning 67000. Counts: {'mpt-chat': 10302, 'mpt': 10323, 'llama-chat': 10531, 'gpt2': 10241, 'human': 5241, 'mistral-chat': 10033, 'mistral': 10329}
+2026-05-03 02:09:17 Collected 67500 rows after scanning 67500. Counts: {'mpt-chat': 10390, 'mpt': 10413, 'llama-chat': 10603, 'gpt2': 10310, 'human': 5289, 'mistral-chat': 10095, 'mistral': 10400}
+2026-05-03 02:09:17 Collected 68000 rows after scanning 68000. Counts: {'mpt-chat': 10452, 'mpt': 10495, 'llama-chat': 10679, 'gpt2': 10387, 'human': 5325, 'mistral-chat': 10174, 'mistral': 10488}
+2026-05-03 02:09:17 Collected 68500 rows after scanning 68500. Counts: {'mpt-chat': 10536, 'mpt': 10569, 'llama-chat': 10767, 'gpt2': 10464, 'human': 5363, 'mistral-chat': 10239, 'mistral': 10562}
+2026-05-03 02:09:17 Collected 69000 rows after scanning 69000. Counts: {'mpt-chat': 10611, 'mpt': 10641, 'llama-chat': 10840, 'gpt2': 10531, 'human': 5415, 'mistral-chat': 10317, 'mistral': 10645}
+2026-05-03 02:09:17 Collected 69500 rows after scanning 69500. Counts: {'mpt-chat': 10683, 'mpt': 10726, 'llama-chat': 10928, 'gpt2': 10601, 'human': 5447, 'mistral-chat': 10395, 'mistral': 10720}
+2026-05-03 02:09:17 Collected 70000 rows after scanning 70000. Counts: {'mpt-chat': 10751, 'mpt': 10811, 'llama-chat': 10999, 'gpt2': 10686, 'human': 5488, 'mistral-chat': 10470, 'mistral': 10795}
+2026-05-03 02:09:17 Collected 70500 rows after scanning 70500. Counts: {'mpt-chat': 10810, 'mpt': 10876, 'llama-chat': 11091, 'gpt2': 10761, 'human': 5531, 'mistral-chat': 10550, 'mistral': 10881}
+2026-05-03 02:09:17 Collected 71000 rows after scanning 71000. Counts: {'mpt-chat': 10889, 'mpt': 10956, 'llama-chat': 11165, 'gpt2': 10844, 'human': 5576, 'mistral-chat': 10624, 'mistral': 10946}
+2026-05-03 02:09:17 Collected 71500 rows after scanning 71500. Counts: {'mpt-chat': 10975, 'mpt': 11028, 'llama-chat': 11248, 'gpt2': 10941, 'human': 5612, 'mistral-chat': 10686, 'mistral': 11010}
+2026-05-03 02:09:17 Collected 72000 rows after scanning 72000. Counts: {'mpt-chat': 11040, 'mpt': 11112, 'llama-chat': 11312, 'gpt2': 11010, 'human': 5658, 'mistral-chat': 10771, 'mistral': 11097}
+2026-05-03 02:09:17 Collected 72500 rows after scanning 72500. Counts: {'mpt-chat': 11121, 'mpt': 11190, 'llama-chat': 11371, 'gpt2': 11088, 'human': 5701, 'mistral-chat': 10850, 'mistral': 11179}
+2026-05-03 02:09:17 Collected 73000 rows after scanning 73000. Counts: {'mpt-chat': 11200, 'mpt': 11260, 'llama-chat': 11450, 'gpt2': 11154, 'human': 5753, 'mistral-chat': 10922, 'mistral': 11261}
+2026-05-03 02:09:17 Collected 73500 rows after scanning 73500. Counts: {'mpt-chat': 11270, 'mpt': 11355, 'llama-chat': 11523, 'gpt2': 11224, 'human': 5796, 'mistral-chat': 10999, 'mistral': 11333}
+2026-05-03 02:09:17 Collected 74000 rows after scanning 74000. Counts: {'mpt-chat': 11350, 'mpt': 11428, 'llama-chat': 11599, 'gpt2': 11314, 'human': 5831, 'mistral-chat': 11071, 'mistral': 11407}
+2026-05-03 02:09:17 Collected 74500 rows after scanning 74500. Counts: {'mpt-chat': 11432, 'mpt': 11515, 'llama-chat': 11672, 'gpt2': 11384, 'human': 5873, 'mistral-chat': 11150, 'mistral': 11474}
+2026-05-03 02:09:17 Collected 75000 rows after scanning 75000. Counts: {'mpt-chat': 11512, 'mpt': 11594, 'llama-chat': 11753, 'gpt2': 11466, 'human': 5909, 'mistral-chat': 11217, 'mistral': 11549}
+2026-05-03 02:09:17 Collected 75500 rows after scanning 75500. Counts: {'mpt-chat': 11590, 'mpt': 11675, 'llama-chat': 11831, 'gpt2': 11552, 'human': 5943, 'mistral-chat': 11285, 'mistral': 11624}
+2026-05-03 02:09:17 Collected 76000 rows after scanning 76000. Counts: {'mpt-chat': 11659, 'mpt': 11747, 'llama-chat': 11920, 'gpt2': 11626, 'human': 5983, 'mistral-chat': 11357, 'mistral': 11708}
+2026-05-03 02:09:17 Collected 76500 rows after scanning 76500. Counts: {'mpt-chat': 11741, 'mpt': 11822, 'llama-chat': 12000, 'gpt2': 11707, 'human': 6015, 'mistral-chat': 11437, 'mistral': 11778}
+2026-05-03 02:09:17 Collected 77000 rows after scanning 77000. Counts: {'mpt-chat': 11838, 'mpt': 11897, 'llama-chat': 12068, 'gpt2': 11788, 'human': 6048, 'mistral-chat': 11509, 'mistral': 11852}
+2026-05-03 02:09:17 Collected 77500 rows after scanning 77500. Counts: {'mpt-chat': 11921, 'mpt': 11971, 'llama-chat': 12140, 'gpt2': 11874, 'human': 6088, 'mistral-chat': 11578, 'mistral': 11928}
+2026-05-03 02:09:17 Collected 78000 rows after scanning 78000. Counts: {'mpt-chat': 12011, 'mpt': 12058, 'llama-chat': 12198, 'gpt2': 11964, 'human': 6121, 'mistral-chat': 11649, 'mistral': 11999}
+2026-05-03 02:09:17 Collected 78500 rows after scanning 78500. Counts: {'mpt-chat': 12092, 'mpt': 12138, 'llama-chat': 12275, 'gpt2': 12042, 'human': 6144, 'mistral-chat': 11746, 'mistral': 12063}
+2026-05-03 02:09:17 Collected 79000 rows after scanning 79000. Counts: {'mpt-chat': 12171, 'mpt': 12207, 'llama-chat': 12349, 'gpt2': 12127, 'human': 6180, 'mistral-chat': 11813, 'mistral': 12153}
+2026-05-03 02:09:17 Collected 79500 rows after scanning 79500. Counts: {'mpt-chat': 12240, 'mpt': 12290, 'llama-chat': 12429, 'gpt2': 12201, 'human': 6211, 'mistral-chat': 11891, 'mistral': 12238}
+2026-05-03 02:09:17 Collected 80000 rows after scanning 80000. Counts: {'mpt-chat': 12321, 'mpt': 12371, 'llama-chat': 12504, 'gpt2': 12271, 'human': 6253, 'mistral-chat': 11958, 'mistral': 12322}
+2026-05-03 02:09:18 Collected 80500 rows after scanning 80500. Counts: {'mpt-chat': 12389, 'mpt': 12470, 'llama-chat': 12567, 'gpt2': 12353, 'human': 6308, 'mistral-chat': 12023, 'mistral': 12390}
+2026-05-03 02:09:18 Collected 81000 rows after scanning 81000. Counts: {'mpt-chat': 12474, 'mpt': 12538, 'llama-chat': 12641, 'gpt2': 12438, 'human': 6334, 'mistral-chat': 12120, 'mistral': 12455}
+2026-05-03 02:09:18 Collected 81500 rows after scanning 81500. Counts: {'mpt-chat': 12539, 'mpt': 12617, 'llama-chat': 12727, 'gpt2': 12509, 'human': 6373, 'mistral-chat': 12205, 'mistral': 12530}
+2026-05-03 02:09:18 Collected 82000 rows after scanning 82000. Counts: {'mpt-chat': 12612, 'mpt': 12692, 'llama-chat': 12806, 'gpt2': 12575, 'human': 6418, 'mistral-chat': 12296, 'mistral': 12601}
+2026-05-03 02:09:18 Collected 82500 rows after scanning 82500. Counts: {'mpt-chat': 12683, 'mpt': 12770, 'llama-chat': 12882, 'gpt2': 12657, 'human': 6452, 'mistral-chat': 12367, 'mistral': 12689}
+2026-05-03 02:09:18 Collected 83000 rows after scanning 83000. Counts: {'mpt-chat': 12751, 'mpt': 12842, 'llama-chat': 12961, 'gpt2': 12728, 'human': 6493, 'mistral-chat': 12444, 'mistral': 12781}
+2026-05-03 02:09:18 Collected 83500 rows after scanning 83500. Counts: {'mpt-chat': 12826, 'mpt': 12913, 'llama-chat': 13044, 'gpt2': 12804, 'human': 6523, 'mistral-chat': 12536, 'mistral': 12854}
+2026-05-03 02:09:18 Collected 84000 rows after scanning 84000. Counts: {'mpt-chat': 12905, 'mpt': 12983, 'llama-chat': 13113, 'gpt2': 12892, 'human': 6555, 'mistral-chat': 12617, 'mistral': 12935}
+2026-05-03 02:09:18 Collected 84500 rows after scanning 84500. Counts: {'mpt-chat': 12981, 'mpt': 13069, 'llama-chat': 13196, 'gpt2': 12971, 'human': 6591, 'mistral-chat': 12688, 'mistral': 13004}
+2026-05-03 02:09:18 Collected 85000 rows after scanning 85000. Counts: {'mpt-chat': 13062, 'mpt': 13140, 'llama-chat': 13269, 'gpt2': 13059, 'human': 6626, 'mistral-chat': 12771, 'mistral': 13073}
+2026-05-03 02:09:18 Collected 85500 rows after scanning 85500. Counts: {'mpt-chat': 13135, 'mpt': 13222, 'llama-chat': 13348, 'gpt2': 13142, 'human': 6666, 'mistral-chat': 12839, 'mistral': 13148}
+2026-05-03 02:09:18 Collected 86000 rows after scanning 86000. Counts: {'mpt-chat': 13200, 'mpt': 13290, 'llama-chat': 13433, 'gpt2': 13223, 'human': 6699, 'mistral-chat': 12919, 'mistral': 13236}
+2026-05-03 02:09:18 Collected 86500 rows after scanning 86500. Counts: {'mpt-chat': 13266, 'mpt': 13368, 'llama-chat': 13514, 'gpt2': 13309, 'human': 6746, 'mistral-chat': 12996, 'mistral': 13301}
+2026-05-03 02:09:18 Collected 87000 rows after scanning 87000. Counts: {'mpt-chat': 13348, 'mpt': 13454, 'llama-chat': 13608, 'gpt2': 13378, 'human': 6778, 'mistral-chat': 13055, 'mistral': 13379}
+2026-05-03 02:09:18 Collected 87500 rows after scanning 87500. Counts: {'mpt-chat': 13432, 'mpt': 13534, 'llama-chat': 13691, 'gpt2': 13442, 'human': 6815, 'mistral-chat': 13136, 'mistral': 13450}
+2026-05-03 02:09:18 Collected 88000 rows after scanning 88000. Counts: {'mpt-chat': 13507, 'mpt': 13604, 'llama-chat': 13773, 'gpt2': 13514, 'human': 6854, 'mistral-chat': 13205, 'mistral': 13543}
+2026-05-03 02:09:18 Collected 88500 rows after scanning 88500. Counts: {'mpt-chat': 13578, 'mpt': 13684, 'llama-chat': 13851, 'gpt2': 13591, 'human': 6903, 'mistral-chat': 13273, 'mistral': 13620}
+2026-05-03 02:09:18 Collected 89000 rows after scanning 89000. Counts: {'mpt-chat': 13655, 'mpt': 13761, 'llama-chat': 13930, 'gpt2': 13662, 'human': 6940, 'mistral-chat': 13352, 'mistral': 13700}
+2026-05-03 02:09:18 Collected 89500 rows after scanning 89500. Counts: {'mpt-chat': 13729, 'mpt': 13846, 'llama-chat': 14006, 'gpt2': 13735, 'human': 6978, 'mistral-chat': 13428, 'mistral': 13778}
+2026-05-03 02:09:18 Collected 90000 rows after scanning 90000. Counts: {'mpt-chat': 13795, 'mpt': 13932, 'llama-chat': 14072, 'gpt2': 13807, 'human': 7023, 'mistral-chat': 13498, 'mistral': 13873}
+2026-05-03 02:09:19 Collected 90500 rows after scanning 90500. Counts: {'mpt-chat': 13854, 'mpt': 14011, 'llama-chat': 14156, 'gpt2': 13899, 'human': 7060, 'mistral-chat': 13582, 'mistral': 13938}
+2026-05-03 02:09:19 Collected 91000 rows after scanning 91000. Counts: {'mpt-chat': 13933, 'mpt': 14096, 'llama-chat': 14233, 'gpt2': 13977, 'human': 7092, 'mistral-chat': 13654, 'mistral': 14015}
+2026-05-03 02:09:19 Collected 91500 rows after scanning 91500. Counts: {'mpt-chat': 14006, 'mpt': 14184, 'llama-chat': 14300, 'gpt2': 14063, 'human': 7127, 'mistral-chat': 13742, 'mistral': 14078}
+2026-05-03 02:09:19 Collected 92000 rows after scanning 92000. Counts: {'mpt-chat': 14076, 'mpt': 14243, 'llama-chat': 14388, 'gpt2': 14133, 'human': 7166, 'mistral-chat': 13833, 'mistral': 14161}
+2026-05-03 02:09:19 Collected 92500 rows after scanning 92500. Counts: {'mpt-chat': 14142, 'mpt': 14332, 'llama-chat': 14471, 'gpt2': 14207, 'human': 7201, 'mistral-chat': 13911, 'mistral': 14236}
+2026-05-03 02:09:19 Collected 93000 rows after scanning 93000. Counts: {'mpt-chat': 14217, 'mpt': 14405, 'llama-chat': 14544, 'gpt2': 14276, 'human': 7241, 'mistral-chat': 14001, 'mistral': 14316}
+2026-05-03 02:09:19 Collected 93500 rows after scanning 93500. Counts: {'mpt-chat': 14301, 'mpt': 14493, 'llama-chat': 14616, 'gpt2': 14358, 'human': 7283, 'mistral-chat': 14071, 'mistral': 14378}
+2026-05-03 02:09:19 Collected 94000 rows after scanning 94000. Counts: {'mpt-chat': 14379, 'mpt': 14570, 'llama-chat': 14703, 'gpt2': 14440, 'human': 7315, 'mistral-chat': 14141, 'mistral': 14452}
+2026-05-03 02:09:19 Collected 94500 rows after scanning 94500. Counts: {'mpt-chat': 14466, 'mpt': 14650, 'llama-chat': 14790, 'gpt2': 14508, 'human': 7358, 'mistral-chat': 14207, 'mistral': 14521}
+2026-05-03 02:09:19 Collected 95000 rows after scanning 95000. Counts: {'mpt-chat': 14537, 'mpt': 14728, 'llama-chat': 14863, 'gpt2': 14577, 'human': 7401, 'mistral-chat': 14299, 'mistral': 14595}
+2026-05-03 02:09:19 Collected 95500 rows after scanning 95500. Counts: {'mpt-chat': 14607, 'mpt': 14806, 'llama-chat': 14920, 'gpt2': 14670, 'human': 7445, 'mistral-chat': 14383, 'mistral': 14669}
+2026-05-03 02:09:19 Collected 96000 rows after scanning 96000. Counts: {'mpt-chat': 14687, 'mpt': 14881, 'llama-chat': 15004, 'gpt2': 14741, 'human': 7484, 'mistral-chat': 14461, 'mistral': 14742}
+2026-05-03 02:09:19 Collected 96500 rows after scanning 96500. Counts: {'mpt-chat': 14767, 'mpt': 14952, 'llama-chat': 15066, 'gpt2': 14820, 'human': 7522, 'mistral-chat': 14547, 'mistral': 14826}
+2026-05-03 02:09:19 Collected 97000 rows after scanning 97000. Counts: {'mpt-chat': 14839, 'mpt': 15011, 'llama-chat': 15145, 'gpt2': 14902, 'human': 7567, 'mistral-chat': 14630, 'mistral': 14906}
+2026-05-03 02:09:19 Collected 97500 rows after scanning 97500. Counts: {'mpt-chat': 14917, 'mpt': 15091, 'llama-chat': 15222, 'gpt2': 14974, 'human': 7593, 'mistral-chat': 14724, 'mistral': 14979}
+2026-05-03 02:09:19 Collected 98000 rows after scanning 98000. Counts: {'mpt-chat': 14992, 'mpt': 15172, 'llama-chat': 15303, 'gpt2': 15034, 'human': 7633, 'mistral-chat': 14802, 'mistral': 15064}
+2026-05-03 02:09:19 Collected 98500 rows after scanning 98500. Counts: {'mpt-chat': 15065, 'mpt': 15242, 'llama-chat': 15386, 'gpt2': 15122, 'human': 7675, 'mistral-chat': 14869, 'mistral': 15141}
+2026-05-03 02:09:19 Collected 99000 rows after scanning 99000. Counts: {'mpt-chat': 15139, 'mpt': 15317, 'llama-chat': 15462, 'gpt2': 15212, 'human': 7709, 'mistral-chat': 14941, 'mistral': 15220}
+2026-05-03 02:09:19 Collected 99500 rows after scanning 99500. Counts: {'mpt-chat': 15226, 'mpt': 15397, 'llama-chat': 15540, 'gpt2': 15281, 'human': 7743, 'mistral-chat': 15017, 'mistral': 15296}
+2026-05-03 02:09:19 Collected 100000 rows after scanning 100000. Counts: {'mpt-chat': 15296, 'mpt': 15478, 'llama-chat': 15612, 'gpt2': 15359, 'human': 7780, 'mistral-chat': 15103, 'mistral': 15372}
+2026-05-03 02:09:20 Collected 100500 rows after scanning 100500. Counts: {'mpt-chat': 15374, 'mpt': 15550, 'llama-chat': 15694, 'gpt2': 15430, 'human': 7816, 'mistral-chat': 15187, 'mistral': 15449}
+2026-05-03 02:09:20 Collected 101000 rows after scanning 101000. Counts: {'mpt-chat': 15453, 'mpt': 15635, 'llama-chat': 15778, 'gpt2': 15510, 'human': 7848, 'mistral-chat': 15252, 'mistral': 15524}
+2026-05-03 02:09:20 Collected 101500 rows after scanning 101500. Counts: {'mpt-chat': 15529, 'mpt': 15710, 'llama-chat': 15846, 'gpt2': 15607, 'human': 7882, 'mistral-chat': 15329, 'mistral': 15597}
+2026-05-03 02:09:20 Collected 102000 rows after scanning 102000. Counts: {'mpt-chat': 15611, 'mpt': 15788, 'llama-chat': 15930, 'gpt2': 15679, 'human': 7931, 'mistral-chat': 15389, 'mistral': 15672}
+2026-05-03 02:09:20 Collected 102500 rows after scanning 102500. Counts: {'mpt-chat': 15694, 'mpt': 15870, 'llama-chat': 15996, 'gpt2': 15763, 'human': 7967, 'mistral-chat': 15463, 'mistral': 15747}
+2026-05-03 02:09:20 Collected 103000 rows after scanning 103000. Counts: {'mpt-chat': 15771, 'mpt': 15943, 'llama-chat': 16066, 'gpt2': 15839, 'human': 8002, 'mistral-chat': 15561, 'mistral': 15818}
+2026-05-03 02:09:20 Collected 103500 rows after scanning 103500. Counts: {'mpt-chat': 15836, 'mpt': 16019, 'llama-chat': 16150, 'gpt2': 15928, 'human': 8046, 'mistral-chat': 15639, 'mistral': 15882}
+2026-05-03 02:09:20 Collected 104000 rows after scanning 104000. Counts: {'mpt-chat': 15896, 'mpt': 16100, 'llama-chat': 16221, 'gpt2': 16021, 'human': 8081, 'mistral-chat': 15727, 'mistral': 15954}
+2026-05-03 02:09:20 Collected 104500 rows after scanning 104500. Counts: {'mpt-chat': 15981, 'mpt': 16188, 'llama-chat': 16290, 'gpt2': 16104, 'human': 8109, 'mistral-chat': 15794, 'mistral': 16034}
+2026-05-03 02:09:20 Collected 105000 rows after scanning 105000. Counts: {'mpt-chat': 16066, 'mpt': 16270, 'llama-chat': 16355, 'gpt2': 16170, 'human': 8147, 'mistral-chat': 15876, 'mistral': 16116}
+2026-05-03 02:09:20 Collected 105500 rows after scanning 105500. Counts: {'mpt-chat': 16141, 'mpt': 16345, 'llama-chat': 16430, 'gpt2': 16243, 'human': 8181, 'mistral-chat': 15958, 'mistral': 16202}
+2026-05-03 02:09:20 Collected 106000 rows after scanning 106000. Counts: {'mpt-chat': 16212, 'mpt': 16412, 'llama-chat': 16511, 'gpt2': 16314, 'human': 8218, 'mistral-chat': 16054, 'mistral': 16279}
+2026-05-03 02:09:20 Collected 106500 rows after scanning 106500. Counts: {'mpt-chat': 16288, 'mpt': 16485, 'llama-chat': 16590, 'gpt2': 16378, 'human': 8247, 'mistral-chat': 16142, 'mistral': 16370}
+2026-05-03 02:09:20 Collected 107000 rows after scanning 107000. Counts: {'mpt-chat': 16376, 'mpt': 16566, 'llama-chat': 16653, 'gpt2': 16461, 'human': 8281, 'mistral-chat': 16215, 'mistral': 16448}
+2026-05-03 02:09:20 Collected 107500 rows after scanning 107500. Counts: {'mpt-chat': 16461, 'mpt': 16633, 'llama-chat': 16735, 'gpt2': 16518, 'human': 8314, 'mistral-chat': 16296, 'mistral': 16543}
+2026-05-03 02:09:20 Collected 108000 rows after scanning 108000. Counts: {'mpt-chat': 16547, 'mpt': 16714, 'llama-chat': 16808, 'gpt2': 16586, 'human': 8352, 'mistral-chat': 16379, 'mistral': 16614}
+2026-05-03 02:09:20 Collected 108500 rows after scanning 108500. Counts: {'mpt-chat': 16631, 'mpt': 16776, 'llama-chat': 16891, 'gpt2': 16667, 'human': 8387, 'mistral-chat': 16458, 'mistral': 16690}
+2026-05-03 02:09:20 Collected 109000 rows after scanning 109000. Counts: {'mpt-chat': 16693, 'mpt': 16864, 'llama-chat': 16967, 'gpt2': 16745, 'human': 8421, 'mistral-chat': 16538, 'mistral': 16772}
+2026-05-03 02:09:20 Collected 109500 rows after scanning 109500. Counts: {'mpt-chat': 16781, 'mpt': 16937, 'llama-chat': 17054, 'gpt2': 16816, 'human': 8447, 'mistral-chat': 16616, 'mistral': 16849}
+2026-05-03 02:09:20 Collected 110000 rows after scanning 110000. Counts: {'mpt-chat': 16856, 'mpt': 17006, 'llama-chat': 17141, 'gpt2': 16893, 'human': 8486, 'mistral-chat': 16694, 'mistral': 16924}
+2026-05-03 02:09:20 Collected 110500 rows after scanning 110500. Counts: {'mpt-chat': 16931, 'mpt': 17082, 'llama-chat': 17212, 'gpt2': 16961, 'human': 8538, 'mistral-chat': 16769, 'mistral': 17007}
+2026-05-03 02:09:20 Collected 111000 rows after scanning 111000. Counts: {'mpt-chat': 17006, 'mpt': 17169, 'llama-chat': 17294, 'gpt2': 17025, 'human': 8562, 'mistral-chat': 16854, 'mistral': 17090}
+2026-05-03 02:09:20 Collected 111500 rows after scanning 111500. Counts: {'mpt-chat': 17077, 'mpt': 17251, 'llama-chat': 17370, 'gpt2': 17105, 'human': 8603, 'mistral-chat': 16928, 'mistral': 17166}
+2026-05-03 02:09:20 Collected 112000 rows after scanning 112000. Counts: {'mpt-chat': 17159, 'mpt': 17313, 'llama-chat': 17452, 'gpt2': 17181, 'human': 8643, 'mistral-chat': 16997, 'mistral': 17255}
+2026-05-03 02:09:20 Collected 112500 rows after scanning 112500. Counts: {'mpt-chat': 17227, 'mpt': 17384, 'llama-chat': 17532, 'gpt2': 17271, 'human': 8678, 'mistral-chat': 17078, 'mistral': 17330}
+2026-05-03 02:09:20 Collected 113000 rows after scanning 113000. Counts: {'mpt-chat': 17320, 'mpt': 17457, 'llama-chat': 17616, 'gpt2': 17344, 'human': 8718, 'mistral-chat': 17145, 'mistral': 17400}
+2026-05-03 02:09:20 Collected 113500 rows after scanning 113500. Counts: {'mpt-chat': 17390, 'mpt': 17541, 'llama-chat': 17694, 'gpt2': 17425, 'human': 8757, 'mistral-chat': 17214, 'mistral': 17479}
+2026-05-03 02:09:20 Collected 114000 rows after scanning 114000. Counts: {'mpt-chat': 17468, 'mpt': 17613, 'llama-chat': 17758, 'gpt2': 17505, 'human': 8794, 'mistral-chat': 17297, 'mistral': 17565}
+2026-05-03 02:09:20 Collected 114500 rows after scanning 114500. Counts: {'mpt-chat': 17538, 'mpt': 17672, 'llama-chat': 17833, 'gpt2': 17592, 'human': 8828, 'mistral-chat': 17399, 'mistral': 17638}
+2026-05-03 02:09:20 Collected 115000 rows after scanning 115000. Counts: {'mpt-chat': 17624, 'mpt': 17746, 'llama-chat': 17911, 'gpt2': 17666, 'human': 8868, 'mistral-chat': 17477, 'mistral': 17708}
+2026-05-03 02:09:20 Collected 115500 rows after scanning 115500. Counts: {'mpt-chat': 17695, 'mpt': 17817, 'llama-chat': 17985, 'gpt2': 17740, 'human': 8911, 'mistral-chat': 17567, 'mistral': 17785}
+2026-05-03 02:09:20 Collected 116000 rows after scanning 116000. Counts: {'mpt-chat': 17766, 'mpt': 17900, 'llama-chat': 18063, 'gpt2': 17815, 'human': 8952, 'mistral-chat': 17652, 'mistral': 17852}
+2026-05-03 02:09:20 Collected 116500 rows after scanning 116500. Counts: {'mpt-chat': 17844, 'mpt': 17978, 'llama-chat': 18131, 'gpt2': 17910, 'human': 8984, 'mistral-chat': 17710, 'mistral': 17943}
+2026-05-03 02:09:20 Collected 117000 rows after scanning 117000. Counts: {'mpt-chat': 17921, 'mpt': 18053, 'llama-chat': 18210, 'gpt2': 17990, 'human': 9014, 'mistral-chat': 17802, 'mistral': 18010}
+2026-05-03 02:09:20 Collected 117500 rows after scanning 117500. Counts: {'mpt-chat': 18006, 'mpt': 18144, 'llama-chat': 18269, 'gpt2': 18066, 'human': 9050, 'mistral-chat': 17881, 'mistral': 18084}
+2026-05-03 02:09:20 Collected 118000 rows after scanning 118000. Counts: {'mpt-chat': 18081, 'mpt': 18208, 'llama-chat': 18367, 'gpt2': 18144, 'human': 9087, 'mistral-chat': 17963, 'mistral': 18150}
+2026-05-03 02:09:20 Collected 118500 rows after scanning 118500. Counts: {'mpt-chat': 18143, 'mpt': 18295, 'llama-chat': 18460, 'gpt2': 18221, 'human': 9129, 'mistral-chat': 18027, 'mistral': 18225}
+2026-05-03 02:09:20 Collected 119000 rows after scanning 119000. Counts: {'mpt-chat': 18211, 'mpt': 18366, 'llama-chat': 18530, 'gpt2': 18312, 'human': 9167, 'mistral-chat': 18106, 'mistral': 18308}
+2026-05-03 02:09:20 Collected 119500 rows after scanning 119500. Counts: {'mpt-chat': 18281, 'mpt': 18445, 'llama-chat': 18613, 'gpt2': 18390, 'human': 9200, 'mistral-chat': 18183, 'mistral': 18388}
+2026-05-03 02:09:20 Collected 120000 rows after scanning 120000. Counts: {'mpt-chat': 18345, 'mpt': 18524, 'llama-chat': 18694, 'gpt2': 18468, 'human': 9247, 'mistral-chat': 18263, 'mistral': 18459}
+2026-05-03 02:09:21 Collected 120500 rows after scanning 120500. Counts: {'mpt-chat': 18416, 'mpt': 18610, 'llama-chat': 18767, 'gpt2': 18562, 'human': 9285, 'mistral-chat': 18335, 'mistral': 18525}
+2026-05-03 02:09:21 Collected 121000 rows after scanning 121000. Counts: {'mpt-chat': 18502, 'mpt': 18679, 'llama-chat': 18847, 'gpt2': 18644, 'human': 9323, 'mistral-chat': 18411, 'mistral': 18594}
+2026-05-03 02:09:21 Collected 121500 rows after scanning 121500. Counts: {'mpt-chat': 18573, 'mpt': 18747, 'llama-chat': 18938, 'gpt2': 18716, 'human': 9368, 'mistral-chat': 18492, 'mistral': 18666}
+2026-05-03 02:09:21 Collected 122000 rows after scanning 122000. Counts: {'mpt-chat': 18654, 'mpt': 18814, 'llama-chat': 19025, 'gpt2': 18801, 'human': 9407, 'mistral-chat': 18563, 'mistral': 18736}
+2026-05-03 02:09:21 Collected 122500 rows after scanning 122500. Counts: {'mpt-chat': 18728, 'mpt': 18915, 'llama-chat': 19099, 'gpt2': 18877, 'human': 9438, 'mistral-chat': 18635, 'mistral': 18808}
+2026-05-03 02:09:21 Collected 123000 rows after scanning 123000. Counts: {'mpt-chat': 18809, 'mpt': 19005, 'llama-chat': 19177, 'gpt2': 18962, 'human': 9475, 'mistral-chat': 18706, 'mistral': 18866}
+2026-05-03 02:09:21 Collected 123500 rows after scanning 123500. Counts: {'mpt-chat': 18906, 'mpt': 19075, 'llama-chat': 19257, 'gpt2': 19028, 'human': 9515, 'mistral-chat': 18774, 'mistral': 18945}
+2026-05-03 02:09:21 Collected 124000 rows after scanning 124000. Counts: {'mpt-chat': 18981, 'mpt': 19155, 'llama-chat': 19340, 'gpt2': 19093, 'human': 9559, 'mistral-chat': 18848, 'mistral': 19024}
+2026-05-03 02:09:21 Collected 124500 rows after scanning 124500. Counts: {'mpt-chat': 19060, 'mpt': 19237, 'llama-chat': 19425, 'gpt2': 19167, 'human': 9598, 'mistral-chat': 18928, 'mistral': 19085}
+2026-05-03 02:09:21 Collected 125000 rows after scanning 125000. Counts: {'mpt-chat': 19141, 'mpt': 19299, 'llama-chat': 19509, 'gpt2': 19250, 'human': 9632, 'mistral-chat': 19006, 'mistral': 19163}
+2026-05-03 02:09:21 Collected 125500 rows after scanning 125500. Counts: {'mpt-chat': 19217, 'mpt': 19380, 'llama-chat': 19582, 'gpt2': 19330, 'human': 9673, 'mistral-chat': 19081, 'mistral': 19237}
+2026-05-03 02:09:21 Collected 126000 rows after scanning 126000. Counts: {'mpt-chat': 19303, 'mpt': 19468, 'llama-chat': 19648, 'gpt2': 19400, 'human': 9712, 'mistral-chat': 19163, 'mistral': 19306}
+2026-05-03 02:09:21 Collected 126500 rows after scanning 126500. Counts: {'mpt-chat': 19365, 'mpt': 19543, 'llama-chat': 19729, 'gpt2': 19489, 'human': 9745, 'mistral-chat': 19240, 'mistral': 19389}
+2026-05-03 02:09:21 Collected 127000 rows after scanning 127000. Counts: {'mpt-chat': 19444, 'mpt': 19624, 'llama-chat': 19804, 'gpt2': 19565, 'human': 9782, 'mistral-chat': 19311, 'mistral': 19470}
+2026-05-03 02:09:21 Collected 127500 rows after scanning 127500. Counts: {'mpt-chat': 19537, 'mpt': 19706, 'llama-chat': 19872, 'gpt2': 19642, 'human': 9822, 'mistral-chat': 19365, 'mistral': 19556}
+2026-05-03 02:09:21 Collected 128000 rows after scanning 128000. Counts: {'mpt-chat': 19615, 'mpt': 19792, 'llama-chat': 19943, 'gpt2': 19721, 'human': 9861, 'mistral-chat': 19434, 'mistral': 19634}
+2026-05-03 02:09:21 Collected 128500 rows after scanning 128534. Counts: {'mpt-chat': 19698, 'mpt': 19869, 'llama-chat': 20000, 'gpt2': 19796, 'human': 9906, 'mistral-chat': 19523, 'mistral': 19708}
+2026-05-03 02:09:21 Collected 129000 rows after scanning 129132. Counts: {'mpt-chat': 19786, 'mpt': 19961, 'llama-chat': 20000, 'gpt2': 19889, 'human': 9954, 'mistral-chat': 19605, 'mistral': 19805}
+2026-05-03 02:09:21 Collected 129500 rows after scanning 129786. Counts: {'mpt-chat': 19898, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 19977, 'human': 9993, 'mistral-chat': 19726, 'mistral': 19906}
+2026-05-03 02:09:21 Collected 130000 rows after scanning 130981. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 10107, 'mistral-chat': 19893, 'mistral': 20000}
+2026-05-03 02:09:21 Collected 130500 rows after scanning 136398. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 10500, 'mistral-chat': 20000, 'mistral': 20000}
+2026-05-03 02:09:22 Collected 131000 rows after scanning 142590. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 11000, 'mistral-chat': 20000, 'mistral': 20000}
+2026-05-03 02:09:22 Collected 131500 rows after scanning 149233. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 11500, 'mistral-chat': 20000, 'mistral': 20000}
+2026-05-03 02:09:23 Collected 132000 rows after scanning 155996. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 12000, 'mistral-chat': 20000, 'mistral': 20000}
+2026-05-03 02:09:23 Collected 132500 rows after scanning 162673. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 12500, 'mistral-chat': 20000, 'mistral': 20000}
+2026-05-03 02:09:23 Collected 133000 rows after scanning 170238. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 12952, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 25, 'cohere': 17, 'chatgpt': 6}
+2026-05-03 02:09:23 Collected 133500 rows after scanning 174574. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 13238, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 76, 'cohere': 75, 'chatgpt': 36, 'gpt4': 38, 'cohere-chat': 37}
+2026-05-03 02:09:23 Collected 134000 rows after scanning 177911. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 13431, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 163, 'cohere': 135, 'chatgpt': 89, 'gpt4': 94, 'cohere-chat': 88}
+2026-05-03 02:09:24 Collected 134500 rows after scanning 180561. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 13591, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 244, 'cohere': 218, 'chatgpt': 164, 'gpt4': 138, 'cohere-chat': 145}
+2026-05-03 02:09:24 Collected 135000 rows after scanning 183035. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 13728, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 337, 'cohere': 287, 'chatgpt': 226, 'gpt4': 209, 'cohere-chat': 213}
+2026-05-03 02:09:24 Collected 135500 rows after scanning 185148. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 13867, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 422, 'cohere': 346, 'chatgpt': 296, 'gpt4': 273, 'cohere-chat': 296}
+2026-05-03 02:09:24 Collected 136000 rows after scanning 187612. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14005, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 496, 'cohere': 419, 'chatgpt': 364, 'gpt4': 354, 'cohere-chat': 362}
+2026-05-03 02:09:24 Collected 136500 rows after scanning 190031. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14137, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 571, 'cohere': 492, 'chatgpt': 447, 'gpt4': 421, 'cohere-chat': 432}
+2026-05-03 02:09:24 Collected 137000 rows after scanning 192599. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14276, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 632, 'cohere': 569, 'chatgpt': 519, 'gpt4': 496, 'cohere-chat': 508}
+2026-05-03 02:09:24 Collected 137500 rows after scanning 195042. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14397, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 703, 'cohere': 651, 'chatgpt': 601, 'gpt4': 567, 'cohere-chat': 581}
+2026-05-03 02:09:24 Collected 138000 rows after scanning 197629. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14529, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 781, 'cohere': 723, 'chatgpt': 667, 'gpt4': 635, 'cohere-chat': 665}
+2026-05-03 02:09:25 Collected 138500 rows after scanning 200392. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14655, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 850, 'cohere': 803, 'chatgpt': 736, 'gpt4': 721, 'cohere-chat': 735}
+2026-05-03 02:09:25 Collected 139000 rows after scanning 203098. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14779, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 910, 'cohere': 883, 'chatgpt': 814, 'gpt4': 797, 'cohere-chat': 817}
+2026-05-03 02:09:25 Collected 139500 rows after scanning 205750. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 14908, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 989, 'cohere': 970, 'chatgpt': 886, 'gpt4': 869, 'cohere-chat': 878}
+2026-05-03 02:09:25 Collected 140000 rows after scanning 208270. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15037, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1072, 'cohere': 1056, 'chatgpt': 956, 'gpt4': 937, 'cohere-chat': 942}
+2026-05-03 02:09:25 Collected 140500 rows after scanning 210686. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15145, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1159, 'cohere': 1122, 'chatgpt': 1034, 'gpt4': 1022, 'cohere-chat': 1018}
+2026-05-03 02:09:25 Collected 141000 rows after scanning 213115. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15236, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1253, 'cohere': 1205, 'chatgpt': 1113, 'gpt4': 1093, 'cohere-chat': 1100}
+2026-05-03 02:09:25 Collected 141500 rows after scanning 215058. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15312, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1341, 'cohere': 1295, 'chatgpt': 1201, 'gpt4': 1178, 'cohere-chat': 1173}
+2026-05-03 02:09:25 Collected 142000 rows after scanning 217014. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15404, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1424, 'cohere': 1355, 'chatgpt': 1293, 'gpt4': 1258, 'cohere-chat': 1266}
+2026-05-03 02:09:25 Collected 142500 rows after scanning 218935. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15479, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1520, 'cohere': 1437, 'chatgpt': 1385, 'gpt4': 1342, 'cohere-chat': 1337}
+2026-05-03 02:09:26 Collected 143000 rows after scanning 220721. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15540, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1617, 'cohere': 1535, 'chatgpt': 1466, 'gpt4': 1428, 'cohere-chat': 1414}
+2026-05-03 02:09:26 Collected 143500 rows after scanning 222316. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15613, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1714, 'cohere': 1630, 'chatgpt': 1550, 'gpt4': 1502, 'cohere-chat': 1491}
+2026-05-03 02:09:26 Collected 144000 rows after scanning 223895. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15689, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1784, 'cohere': 1720, 'chatgpt': 1634, 'gpt4': 1600, 'cohere-chat': 1573}
+2026-05-03 02:09:26 Collected 144500 rows after scanning 225585. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15747, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1866, 'cohere': 1799, 'chatgpt': 1719, 'gpt4': 1693, 'cohere-chat': 1676}
+2026-05-03 02:09:26 Collected 145000 rows after scanning 227303. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15812, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 1946, 'cohere': 1881, 'chatgpt': 1807, 'gpt4': 1787, 'cohere-chat': 1767}
+2026-05-03 02:09:26 Collected 145500 rows after scanning 228966. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15872, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2018, 'cohere': 1969, 'chatgpt': 1892, 'gpt4': 1879, 'cohere-chat': 1870}
+2026-05-03 02:09:26 Collected 146000 rows after scanning 230625. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15937, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2103, 'cohere': 2047, 'chatgpt': 1975, 'gpt4': 1962, 'cohere-chat': 1976}
+2026-05-03 02:09:26 Collected 146500 rows after scanning 232494. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 15992, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2186, 'cohere': 2146, 'chatgpt': 2063, 'gpt4': 2056, 'cohere-chat': 2057}
+2026-05-03 02:09:26 Collected 147000 rows after scanning 234261. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16048, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2271, 'cohere': 2235, 'chatgpt': 2148, 'gpt4': 2145, 'cohere-chat': 2153}
+2026-05-03 02:09:26 Collected 147500 rows after scanning 236055. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16112, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2375, 'cohere': 2315, 'chatgpt': 2228, 'gpt4': 2222, 'cohere-chat': 2248}
+2026-05-03 02:09:26 Collected 148000 rows after scanning 237950. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16169, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2464, 'cohere': 2402, 'chatgpt': 2317, 'gpt4': 2319, 'cohere-chat': 2329}
+2026-05-03 02:09:26 Collected 148500 rows after scanning 239800. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16237, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2561, 'cohere': 2478, 'chatgpt': 2388, 'gpt4': 2409, 'cohere-chat': 2427}
+2026-05-03 02:09:27 Collected 149000 rows after scanning 241709. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16299, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2644, 'cohere': 2570, 'chatgpt': 2490, 'gpt4': 2498, 'cohere-chat': 2499}
+2026-05-03 02:09:27 Collected 149500 rows after scanning 243716. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16359, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2724, 'cohere': 2647, 'chatgpt': 2581, 'gpt4': 2597, 'cohere-chat': 2592}
+2026-05-03 02:09:27 Collected 150000 rows after scanning 245684. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16413, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2799, 'cohere': 2739, 'chatgpt': 2672, 'gpt4': 2686, 'cohere-chat': 2691}
+2026-05-03 02:09:27 Collected 150500 rows after scanning 247626. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16464, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2883, 'cohere': 2830, 'chatgpt': 2780, 'gpt4': 2764, 'cohere-chat': 2779}
+2026-05-03 02:09:27 Collected 151000 rows after scanning 249374. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16509, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 2971, 'cohere': 2918, 'chatgpt': 2872, 'gpt4': 2859, 'cohere-chat': 2871}
+2026-05-03 02:09:27 Collected 151500 rows after scanning 251073. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16558, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3086, 'cohere': 3010, 'chatgpt': 2954, 'gpt4': 2936, 'cohere-chat': 2956}
+2026-05-03 02:09:27 Collected 152000 rows after scanning 252625. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16603, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3212, 'cohere': 3092, 'chatgpt': 3046, 'gpt4': 3016, 'cohere-chat': 3031}
+2026-05-03 02:09:27 Collected 152500 rows after scanning 254155. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16636, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3306, 'cohere': 3177, 'chatgpt': 3158, 'gpt4': 3116, 'cohere-chat': 3107}
+2026-05-03 02:09:27 Collected 153000 rows after scanning 255736. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16681, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3406, 'cohere': 3267, 'chatgpt': 3253, 'gpt4': 3211, 'cohere-chat': 3182}
+2026-05-03 02:09:27 Collected 153500 rows after scanning 257260. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16715, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3509, 'cohere': 3364, 'chatgpt': 3344, 'gpt4': 3307, 'cohere-chat': 3261}
+2026-05-03 02:09:27 Collected 154000 rows after scanning 258630. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16755, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3611, 'cohere': 3478, 'chatgpt': 3428, 'gpt4': 3394, 'cohere-chat': 3334}
+2026-05-03 02:09:28 Collected 154500 rows after scanning 260056. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16792, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3706, 'cohere': 3573, 'chatgpt': 3512, 'gpt4': 3486, 'cohere-chat': 3431}
+2026-05-03 02:09:28 Collected 155000 rows after scanning 261452. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16836, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3804, 'cohere': 3657, 'chatgpt': 3593, 'gpt4': 3587, 'cohere-chat': 3523}
+2026-05-03 02:09:28 Collected 155500 rows after scanning 262791. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16864, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 3898, 'cohere': 3755, 'chatgpt': 3681, 'gpt4': 3681, 'cohere-chat': 3621}
+2026-05-03 02:09:28 Collected 156000 rows after scanning 264144. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16897, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4019, 'cohere': 3839, 'chatgpt': 3760, 'gpt4': 3769, 'cohere-chat': 3716}
+2026-05-03 02:09:28 Collected 156500 rows after scanning 265496. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16935, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4119, 'cohere': 3921, 'chatgpt': 3847, 'gpt4': 3867, 'cohere-chat': 3811}
+2026-05-03 02:09:28 Collected 157000 rows after scanning 266932. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 16969, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4201, 'cohere': 4023, 'chatgpt': 3938, 'gpt4': 3960, 'cohere-chat': 3909}
+2026-05-03 02:09:28 Collected 157500 rows after scanning 268446. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17008, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4283, 'cohere': 4101, 'chatgpt': 4045, 'gpt4': 4047, 'cohere-chat': 4016}
+2026-05-03 02:09:28 Collected 158000 rows after scanning 269958. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17037, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4365, 'cohere': 4206, 'chatgpt': 4154, 'gpt4': 4124, 'cohere-chat': 4114}
+2026-05-03 02:09:28 Collected 158500 rows after scanning 271464. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17059, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4467, 'cohere': 4308, 'chatgpt': 4258, 'gpt4': 4206, 'cohere-chat': 4202}
+2026-05-03 02:09:28 Collected 159000 rows after scanning 272923. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17093, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4559, 'cohere': 4399, 'chatgpt': 4356, 'gpt4': 4311, 'cohere-chat': 4282}
+2026-05-03 02:09:28 Collected 159500 rows after scanning 274417. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17127, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4655, 'cohere': 4493, 'chatgpt': 4438, 'gpt4': 4403, 'cohere-chat': 4384}
+2026-05-03 02:09:28 Collected 160000 rows after scanning 276012. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17162, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4738, 'cohere': 4590, 'chatgpt': 4539, 'gpt4': 4500, 'cohere-chat': 4471}
+2026-05-03 02:09:28 Collected 160500 rows after scanning 277584. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17190, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4827, 'cohere': 4685, 'chatgpt': 4632, 'gpt4': 4605, 'cohere-chat': 4561}
+2026-05-03 02:09:28 Collected 161000 rows after scanning 279244. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17221, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 4915, 'cohere': 4775, 'chatgpt': 4724, 'gpt4': 4709, 'cohere-chat': 4656}
+2026-05-03 02:09:28 Collected 161500 rows after scanning 280857. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17249, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5018, 'cohere': 4872, 'chatgpt': 4826, 'gpt4': 4801, 'cohere-chat': 4734}
+2026-05-03 02:09:28 Collected 162000 rows after scanning 282473. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17282, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5093, 'cohere': 4974, 'chatgpt': 4926, 'gpt4': 4891, 'cohere-chat': 4834}
+2026-05-03 02:09:28 Collected 162500 rows after scanning 284156. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17314, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5181, 'cohere': 5066, 'chatgpt': 5003, 'gpt4': 5005, 'cohere-chat': 4931}
+2026-05-03 02:09:28 Collected 163000 rows after scanning 285803. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17340, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5289, 'cohere': 5165, 'chatgpt': 5092, 'gpt4': 5101, 'cohere-chat': 5013}
+2026-05-03 02:09:28 Collected 163500 rows after scanning 287456. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17372, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5396, 'cohere': 5239, 'chatgpt': 5196, 'gpt4': 5186, 'cohere-chat': 5111}
+2026-05-03 02:09:29 Collected 164000 rows after scanning 288881. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17405, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5485, 'cohere': 5330, 'chatgpt': 5290, 'gpt4': 5293, 'cohere-chat': 5197}
+2026-05-03 02:09:29 Collected 164500 rows after scanning 290289. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17437, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5589, 'cohere': 5419, 'chatgpt': 5403, 'gpt4': 5365, 'cohere-chat': 5287}
+2026-05-03 02:09:29 Collected 165000 rows after scanning 291634. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17461, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5677, 'cohere': 5523, 'chatgpt': 5508, 'gpt4': 5448, 'cohere-chat': 5383}
+2026-05-03 02:09:29 Collected 165500 rows after scanning 293060. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17487, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5758, 'cohere': 5625, 'chatgpt': 5619, 'gpt4': 5554, 'cohere-chat': 5457}
+2026-05-03 02:09:29 Collected 166000 rows after scanning 294383. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17511, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5846, 'cohere': 5724, 'chatgpt': 5706, 'gpt4': 5660, 'cohere-chat': 5553}
+2026-05-03 02:09:29 Collected 166500 rows after scanning 295683. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17533, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 5939, 'cohere': 5829, 'chatgpt': 5805, 'gpt4': 5756, 'cohere-chat': 5638}
+2026-05-03 02:09:29 Collected 167000 rows after scanning 296986. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17553, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6040, 'cohere': 5916, 'chatgpt': 5907, 'gpt4': 5851, 'cohere-chat': 5733}
+2026-05-03 02:09:29 Collected 167500 rows after scanning 298270. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17578, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6133, 'cohere': 6008, 'chatgpt': 6009, 'gpt4': 5943, 'cohere-chat': 5829}
+2026-05-03 02:09:29 Collected 168000 rows after scanning 299492. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17602, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6232, 'cohere': 6109, 'chatgpt': 6105, 'gpt4': 6034, 'cohere-chat': 5918}
+2026-05-03 02:09:29 Collected 168500 rows after scanning 300762. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17632, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6344, 'cohere': 6190, 'chatgpt': 6204, 'gpt4': 6117, 'cohere-chat': 6013}
+2026-05-03 02:09:29 Collected 169000 rows after scanning 301924. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17648, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6443, 'cohere': 6279, 'chatgpt': 6311, 'gpt4': 6220, 'cohere-chat': 6099}
+2026-05-03 02:09:29 Collected 169500 rows after scanning 303122. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17674, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6545, 'cohere': 6363, 'chatgpt': 6415, 'gpt4': 6315, 'cohere-chat': 6188}
+2026-05-03 02:09:29 Collected 170000 rows after scanning 304310. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17696, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6642, 'cohere': 6454, 'chatgpt': 6512, 'gpt4': 6406, 'cohere-chat': 6290}
+2026-05-03 02:09:29 Collected 170500 rows after scanning 305539. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17717, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6737, 'cohere': 6547, 'chatgpt': 6612, 'gpt4': 6497, 'cohere-chat': 6390}
+2026-05-03 02:09:29 Collected 171000 rows after scanning 306819. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17731, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6830, 'cohere': 6651, 'chatgpt': 6711, 'gpt4': 6593, 'cohere-chat': 6484}
+2026-05-03 02:09:29 Collected 171500 rows after scanning 308084. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17756, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 6914, 'cohere': 6745, 'chatgpt': 6807, 'gpt4': 6695, 'cohere-chat': 6583}
+2026-05-03 02:09:29 Collected 172000 rows after scanning 309402. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17775, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7006, 'cohere': 6834, 'chatgpt': 6918, 'gpt4': 6793, 'cohere-chat': 6674}
+2026-05-03 02:09:30 Collected 172500 rows after scanning 310757. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17804, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7099, 'cohere': 6926, 'chatgpt': 6999, 'gpt4': 6899, 'cohere-chat': 6773}
+2026-05-03 02:09:30 Collected 173000 rows after scanning 312077. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17823, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7198, 'cohere': 7026, 'chatgpt': 7089, 'gpt4': 6993, 'cohere-chat': 6871}
+2026-05-03 02:09:30 Collected 173500 rows after scanning 313441. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17844, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7292, 'cohere': 7126, 'chatgpt': 7187, 'gpt4': 7096, 'cohere-chat': 6955}
+2026-05-03 02:09:30 Collected 174000 rows after scanning 314789. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17868, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7378, 'cohere': 7224, 'chatgpt': 7288, 'gpt4': 7183, 'cohere-chat': 7059}
+2026-05-03 02:09:30 Collected 174500 rows after scanning 316234. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17884, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7485, 'cohere': 7320, 'chatgpt': 7384, 'gpt4': 7269, 'cohere-chat': 7158}
+2026-05-03 02:09:30 Collected 175000 rows after scanning 317724. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17904, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7582, 'cohere': 7431, 'chatgpt': 7478, 'gpt4': 7363, 'cohere-chat': 7242}
+2026-05-03 02:09:30 Collected 175500 rows after scanning 319117. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17930, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7680, 'cohere': 7525, 'chatgpt': 7587, 'gpt4': 7449, 'cohere-chat': 7329}
+2026-05-03 02:09:30 Collected 176000 rows after scanning 320544. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17951, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7774, 'cohere': 7626, 'chatgpt': 7693, 'gpt4': 7525, 'cohere-chat': 7431}
+2026-05-03 02:09:30 Collected 176500 rows after scanning 321988. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17970, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7863, 'cohere': 7725, 'chatgpt': 7785, 'gpt4': 7615, 'cohere-chat': 7542}
+2026-05-03 02:09:30 Collected 177000 rows after scanning 323474. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 17987, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 7962, 'cohere': 7813, 'chatgpt': 7871, 'gpt4': 7718, 'cohere-chat': 7649}
+2026-05-03 02:09:30 Collected 177500 rows after scanning 324934. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18011, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8051, 'cohere': 7940, 'chatgpt': 7957, 'gpt4': 7810, 'cohere-chat': 7731}
+2026-05-03 02:09:30 Collected 178000 rows after scanning 326304. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18033, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8153, 'cohere': 8033, 'chatgpt': 8047, 'gpt4': 7902, 'cohere-chat': 7832}
+2026-05-03 02:09:30 Collected 178500 rows after scanning 327650. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18052, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8255, 'cohere': 8120, 'chatgpt': 8149, 'gpt4': 7998, 'cohere-chat': 7926}
+2026-05-03 02:09:30 Collected 179000 rows after scanning 329016. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18073, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8354, 'cohere': 8224, 'chatgpt': 8235, 'gpt4': 8090, 'cohere-chat': 8024}
+2026-05-03 02:09:31 Collected 179500 rows after scanning 330286. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18094, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8442, 'cohere': 8334, 'chatgpt': 8337, 'gpt4': 8177, 'cohere-chat': 8116}
+2026-05-03 02:09:31 Collected 180000 rows after scanning 331576. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18113, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8541, 'cohere': 8440, 'chatgpt': 8436, 'gpt4': 8268, 'cohere-chat': 8202}
+2026-05-03 02:09:31 Collected 180500 rows after scanning 332812. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18131, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8630, 'cohere': 8538, 'chatgpt': 8531, 'gpt4': 8366, 'cohere-chat': 8304}
+2026-05-03 02:09:31 Collected 181000 rows after scanning 334028. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18147, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8744, 'cohere': 8638, 'chatgpt': 8634, 'gpt4': 8457, 'cohere-chat': 8380}
+2026-05-03 02:09:31 Collected 181500 rows after scanning 335222. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18156, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8846, 'cohere': 8748, 'chatgpt': 8725, 'gpt4': 8556, 'cohere-chat': 8469}
+2026-05-03 02:09:31 Collected 182000 rows after scanning 336408. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18171, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 8940, 'cohere': 8848, 'chatgpt': 8835, 'gpt4': 8640, 'cohere-chat': 8566}
+2026-05-03 02:09:31 Collected 182500 rows after scanning 337570. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18182, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9040, 'cohere': 8948, 'chatgpt': 8921, 'gpt4': 8741, 'cohere-chat': 8668}
+2026-05-03 02:09:31 Collected 183000 rows after scanning 338699. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18197, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9138, 'cohere': 9038, 'chatgpt': 9029, 'gpt4': 8833, 'cohere-chat': 8765}
+2026-05-03 02:09:31 Collected 183500 rows after scanning 339935. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18208, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9235, 'cohere': 9122, 'chatgpt': 9103, 'gpt4': 8961, 'cohere-chat': 8871}
+2026-05-03 02:09:31 Collected 184000 rows after scanning 341065. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18217, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9327, 'cohere': 9217, 'chatgpt': 9202, 'gpt4': 9060, 'cohere-chat': 8977}
+2026-05-03 02:09:31 Collected 184500 rows after scanning 342262. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18223, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9437, 'cohere': 9308, 'chatgpt': 9289, 'gpt4': 9165, 'cohere-chat': 9078}
+2026-05-03 02:09:31 Collected 185000 rows after scanning 343410. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18234, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9541, 'cohere': 9404, 'chatgpt': 9381, 'gpt4': 9263, 'cohere-chat': 9177}
+2026-05-03 02:09:31 Collected 185500 rows after scanning 344638. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18246, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9644, 'cohere': 9493, 'chatgpt': 9468, 'gpt4': 9369, 'cohere-chat': 9280}
+2026-05-03 02:09:31 Collected 186000 rows after scanning 345835. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18262, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9723, 'cohere': 9598, 'chatgpt': 9563, 'gpt4': 9472, 'cohere-chat': 9382}
+2026-05-03 02:09:31 Collected 186500 rows after scanning 347059. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18273, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9814, 'cohere': 9698, 'chatgpt': 9662, 'gpt4': 9561, 'cohere-chat': 9492}
+2026-05-03 02:09:31 Collected 187000 rows after scanning 348285. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18291, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9896, 'cohere': 9784, 'chatgpt': 9762, 'gpt4': 9682, 'cohere-chat': 9585}
+2026-05-03 02:09:31 Collected 187500 rows after scanning 349568. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18305, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 9987, 'cohere': 9892, 'chatgpt': 9863, 'gpt4': 9777, 'cohere-chat': 9676}
+2026-05-03 02:09:32 Collected 188000 rows after scanning 350843. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18316, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10096, 'cohere': 9981, 'chatgpt': 9963, 'gpt4': 9874, 'cohere-chat': 9770}
+2026-05-03 02:09:32 Collected 188500 rows after scanning 352077. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18331, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10206, 'cohere': 10062, 'chatgpt': 10052, 'gpt4': 9973, 'cohere-chat': 9876}
+2026-05-03 02:09:32 Collected 189000 rows after scanning 353353. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18341, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10316, 'cohere': 10157, 'chatgpt': 10129, 'gpt4': 10071, 'cohere-chat': 9986}
+2026-05-03 02:09:32 Collected 189500 rows after scanning 354650. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18357, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10417, 'cohere': 10254, 'chatgpt': 10215, 'gpt4': 10179, 'cohere-chat': 10078}
+2026-05-03 02:09:32 Collected 190000 rows after scanning 355968. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18375, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10515, 'cohere': 10353, 'chatgpt': 10315, 'gpt4': 10277, 'cohere-chat': 10165}
+2026-05-03 02:09:32 Collected 190500 rows after scanning 357423. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18386, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10615, 'cohere': 10449, 'chatgpt': 10410, 'gpt4': 10372, 'cohere-chat': 10268}
+2026-05-03 02:09:32 Collected 191000 rows after scanning 358893. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18404, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10703, 'cohere': 10557, 'chatgpt': 10504, 'gpt4': 10459, 'cohere-chat': 10373}
+2026-05-03 02:09:32 Collected 191500 rows after scanning 360242. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18421, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10802, 'cohere': 10654, 'chatgpt': 10596, 'gpt4': 10553, 'cohere-chat': 10474}
+2026-05-03 02:09:32 Collected 192000 rows after scanning 361560. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18435, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 10914, 'cohere': 10753, 'chatgpt': 10688, 'gpt4': 10640, 'cohere-chat': 10570}
+2026-05-03 02:09:32 Collected 192500 rows after scanning 362990. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18447, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11012, 'cohere': 10848, 'chatgpt': 10790, 'gpt4': 10747, 'cohere-chat': 10656}
+2026-05-03 02:09:32 Collected 193000 rows after scanning 364324. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18460, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11098, 'cohere': 10939, 'chatgpt': 10884, 'gpt4': 10852, 'cohere-chat': 10767}
+2026-05-03 02:09:32 Collected 193500 rows after scanning 365693. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18474, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11203, 'cohere': 11029, 'chatgpt': 10998, 'gpt4': 10946, 'cohere-chat': 10850}
+2026-05-03 02:09:32 Collected 194000 rows after scanning 367000. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18487, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11295, 'cohere': 11123, 'chatgpt': 11094, 'gpt4': 11044, 'cohere-chat': 10957}
+2026-05-03 02:09:32 Collected 194500 rows after scanning 368216. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18497, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11395, 'cohere': 11217, 'chatgpt': 11195, 'gpt4': 11141, 'cohere-chat': 11055}
+2026-05-03 02:09:32 Collected 195000 rows after scanning 369415. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18507, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11489, 'cohere': 11322, 'chatgpt': 11284, 'gpt4': 11239, 'cohere-chat': 11159}
+2026-05-03 02:09:32 Collected 195500 rows after scanning 370664. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18518, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11581, 'cohere': 11423, 'chatgpt': 11373, 'gpt4': 11349, 'cohere-chat': 11256}
+2026-05-03 02:09:32 Collected 196000 rows after scanning 371867. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18528, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11676, 'cohere': 11524, 'chatgpt': 11468, 'gpt4': 11456, 'cohere-chat': 11348}
+2026-05-03 02:09:32 Collected 196500 rows after scanning 373057. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18536, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11776, 'cohere': 11639, 'chatgpt': 11552, 'gpt4': 11567, 'cohere-chat': 11430}
+2026-05-03 02:09:33 Collected 197000 rows after scanning 374242. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18542, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11890, 'cohere': 11742, 'chatgpt': 11652, 'gpt4': 11664, 'cohere-chat': 11510}
+2026-05-03 02:09:33 Collected 197500 rows after scanning 375293. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18553, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 11988, 'cohere': 11834, 'chatgpt': 11743, 'gpt4': 11771, 'cohere-chat': 11611}
+2026-05-03 02:09:33 Collected 198000 rows after scanning 376410. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18566, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12092, 'cohere': 11918, 'chatgpt': 11855, 'gpt4': 11854, 'cohere-chat': 11715}
+2026-05-03 02:09:33 Collected 198500 rows after scanning 377477. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18570, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12179, 'cohere': 12024, 'chatgpt': 11949, 'gpt4': 11955, 'cohere-chat': 11823}
+2026-05-03 02:09:33 Collected 199000 rows after scanning 378583. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18579, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12279, 'cohere': 12128, 'chatgpt': 12029, 'gpt4': 12071, 'cohere-chat': 11914}
+2026-05-03 02:09:33 Collected 199500 rows after scanning 379714. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18589, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12370, 'cohere': 12231, 'chatgpt': 12121, 'gpt4': 12163, 'cohere-chat': 12026}
+2026-05-03 02:09:33 Collected 200000 rows after scanning 380829. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18602, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12468, 'cohere': 12319, 'chatgpt': 12216, 'gpt4': 12260, 'cohere-chat': 12135}
+2026-05-03 02:09:33 Collected 200500 rows after scanning 381945. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18619, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12558, 'cohere': 12410, 'chatgpt': 12313, 'gpt4': 12366, 'cohere-chat': 12234}
+2026-05-03 02:09:33 Collected 201000 rows after scanning 383119. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18630, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12655, 'cohere': 12499, 'chatgpt': 12437, 'gpt4': 12450, 'cohere-chat': 12329}
+2026-05-03 02:09:33 Collected 201500 rows after scanning 384296. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18636, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12744, 'cohere': 12596, 'chatgpt': 12530, 'gpt4': 12548, 'cohere-chat': 12446}
+2026-05-03 02:09:33 Collected 202000 rows after scanning 385390. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18647, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12829, 'cohere': 12687, 'chatgpt': 12627, 'gpt4': 12649, 'cohere-chat': 12561}
+2026-05-03 02:09:33 Collected 202500 rows after scanning 386530. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18658, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 12925, 'cohere': 12791, 'chatgpt': 12715, 'gpt4': 12755, 'cohere-chat': 12656}
+2026-05-03 02:09:33 Collected 203000 rows after scanning 387738. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18669, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13025, 'cohere': 12893, 'chatgpt': 12810, 'gpt4': 12858, 'cohere-chat': 12745}
+2026-05-03 02:09:33 Collected 203500 rows after scanning 388899. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18676, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13123, 'cohere': 12991, 'chatgpt': 12924, 'gpt4': 12953, 'cohere-chat': 12833}
+2026-05-03 02:09:33 Collected 204000 rows after scanning 390057. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18679, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13242, 'cohere': 13075, 'chatgpt': 13017, 'gpt4': 13064, 'cohere-chat': 12923}
+2026-05-03 02:09:33 Collected 204500 rows after scanning 391268. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18689, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13334, 'cohere': 13168, 'chatgpt': 13114, 'gpt4': 13170, 'cohere-chat': 13025}
+2026-05-03 02:09:33 Collected 205000 rows after scanning 392440. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18698, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13457, 'cohere': 13254, 'chatgpt': 13198, 'gpt4': 13277, 'cohere-chat': 13116}
+2026-05-03 02:09:33 Collected 205500 rows after scanning 393653. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18708, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13541, 'cohere': 13356, 'chatgpt': 13308, 'gpt4': 13376, 'cohere-chat': 13211}
+2026-05-03 02:09:33 Collected 206000 rows after scanning 394917. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18715, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13642, 'cohere': 13448, 'chatgpt': 13415, 'gpt4': 13463, 'cohere-chat': 13317}
+2026-05-03 02:09:34 Collected 206500 rows after scanning 396223. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18725, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13741, 'cohere': 13553, 'chatgpt': 13503, 'gpt4': 13559, 'cohere-chat': 13419}
+2026-05-03 02:09:34 Collected 207000 rows after scanning 397455. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18734, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13845, 'cohere': 13651, 'chatgpt': 13614, 'gpt4': 13652, 'cohere-chat': 13504}
+2026-05-03 02:09:34 Collected 207500 rows after scanning 398795. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18745, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 13941, 'cohere': 13736, 'chatgpt': 13722, 'gpt4': 13745, 'cohere-chat': 13611}
+2026-05-03 02:09:34 Collected 208000 rows after scanning 400177. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18755, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14027, 'cohere': 13838, 'chatgpt': 13842, 'gpt4': 13836, 'cohere-chat': 13702}
+2026-05-03 02:09:34 Collected 208500 rows after scanning 401434. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18764, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14134, 'cohere': 13928, 'chatgpt': 13939, 'gpt4': 13935, 'cohere-chat': 13800}
+2026-05-03 02:09:34 Collected 209000 rows after scanning 402716. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18777, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14232, 'cohere': 14027, 'chatgpt': 14034, 'gpt4': 14025, 'cohere-chat': 13905}
+2026-05-03 02:09:34 Collected 209500 rows after scanning 403987. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18785, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14338, 'cohere': 14129, 'chatgpt': 14134, 'gpt4': 14130, 'cohere-chat': 13984}
+2026-05-03 02:09:34 Collected 210000 rows after scanning 405272. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18792, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14456, 'cohere': 14218, 'chatgpt': 14223, 'gpt4': 14219, 'cohere-chat': 14092}
+2026-05-03 02:09:34 Collected 210500 rows after scanning 406474. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18795, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14563, 'cohere': 14308, 'chatgpt': 14308, 'gpt4': 14315, 'cohere-chat': 14211}
+2026-05-03 02:09:34 Collected 211000 rows after scanning 407635. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18798, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14670, 'cohere': 14423, 'chatgpt': 14401, 'gpt4': 14410, 'cohere-chat': 14298}
+2026-05-03 02:09:34 Collected 211500 rows after scanning 408815. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18802, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14778, 'cohere': 14514, 'chatgpt': 14523, 'gpt4': 14497, 'cohere-chat': 14386}
+2026-05-03 02:09:34 Collected 212000 rows after scanning 409942. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18808, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14877, 'cohere': 14612, 'chatgpt': 14623, 'gpt4': 14587, 'cohere-chat': 14493}
+2026-05-03 02:09:34 Collected 212500 rows after scanning 411090. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18815, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 14978, 'cohere': 14717, 'chatgpt': 14722, 'gpt4': 14671, 'cohere-chat': 14597}
+2026-05-03 02:09:34 Collected 213000 rows after scanning 412178. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18818, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15077, 'cohere': 14826, 'chatgpt': 14823, 'gpt4': 14749, 'cohere-chat': 14707}
+2026-05-03 02:09:34 Collected 213500 rows after scanning 413310. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18824, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15186, 'cohere': 14929, 'chatgpt': 14926, 'gpt4': 14827, 'cohere-chat': 14808}
+2026-05-03 02:09:34 Collected 214000 rows after scanning 414353. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18840, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15280, 'cohere': 15041, 'chatgpt': 15019, 'gpt4': 14920, 'cohere-chat': 14900}
+2026-05-03 02:09:34 Collected 214500 rows after scanning 415513. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18847, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15377, 'cohere': 15145, 'chatgpt': 15111, 'gpt4': 15010, 'cohere-chat': 15010}
+2026-05-03 02:09:34 Collected 215000 rows after scanning 416575. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18859, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15497, 'cohere': 15243, 'chatgpt': 15201, 'gpt4': 15098, 'cohere-chat': 15102}
+2026-05-03 02:09:34 Collected 215500 rows after scanning 417587. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18865, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15592, 'cohere': 15334, 'chatgpt': 15315, 'gpt4': 15191, 'cohere-chat': 15203}
+2026-05-03 02:09:34 Collected 216000 rows after scanning 418664. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18873, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15682, 'cohere': 15453, 'chatgpt': 15405, 'gpt4': 15293, 'cohere-chat': 15294}
+2026-05-03 02:09:34 Collected 216500 rows after scanning 419748. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18879, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15763, 'cohere': 15551, 'chatgpt': 15512, 'gpt4': 15378, 'cohere-chat': 15417}
+2026-05-03 02:09:35 Collected 217000 rows after scanning 420849. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18883, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15847, 'cohere': 15648, 'chatgpt': 15626, 'gpt4': 15467, 'cohere-chat': 15529}
+2026-05-03 02:09:35 Collected 217500 rows after scanning 421938. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18892, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 15951, 'cohere': 15735, 'chatgpt': 15723, 'gpt4': 15564, 'cohere-chat': 15635}
+2026-05-03 02:09:35 Collected 218000 rows after scanning 423029. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18894, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16045, 'cohere': 15827, 'chatgpt': 15835, 'gpt4': 15659, 'cohere-chat': 15740}
+2026-05-03 02:09:35 Collected 218500 rows after scanning 424147. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18898, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16131, 'cohere': 15923, 'chatgpt': 15939, 'gpt4': 15763, 'cohere-chat': 15846}
+2026-05-03 02:09:35 Collected 219000 rows after scanning 425188. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18907, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16227, 'cohere': 16029, 'chatgpt': 16026, 'gpt4': 15857, 'cohere-chat': 15954}
+2026-05-03 02:09:35 Collected 219500 rows after scanning 426331. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18914, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16311, 'cohere': 16136, 'chatgpt': 16118, 'gpt4': 15965, 'cohere-chat': 16056}
+2026-05-03 02:09:35 Collected 220000 rows after scanning 427448. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18918, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16401, 'cohere': 16241, 'chatgpt': 16215, 'gpt4': 16079, 'cohere-chat': 16146}
+2026-05-03 02:09:35 Collected 220500 rows after scanning 428564. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18923, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16509, 'cohere': 16339, 'chatgpt': 16324, 'gpt4': 16160, 'cohere-chat': 16245}
+2026-05-03 02:09:35 Collected 221000 rows after scanning 429760. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18925, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16610, 'cohere': 16444, 'chatgpt': 16423, 'gpt4': 16257, 'cohere-chat': 16341}
+2026-05-03 02:09:35 Collected 221500 rows after scanning 430907. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18927, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16713, 'cohere': 16553, 'chatgpt': 16520, 'gpt4': 16351, 'cohere-chat': 16436}
+2026-05-03 02:09:35 Collected 222000 rows after scanning 432161. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18933, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16807, 'cohere': 16662, 'chatgpt': 16611, 'gpt4': 16457, 'cohere-chat': 16530}
+2026-05-03 02:09:35 Collected 222500 rows after scanning 433378. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18941, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16897, 'cohere': 16765, 'chatgpt': 16709, 'gpt4': 16558, 'cohere-chat': 16630}
+2026-05-03 02:09:35 Collected 223000 rows after scanning 434704. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18944, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 16988, 'cohere': 16872, 'chatgpt': 16809, 'gpt4': 16661, 'cohere-chat': 16726}
+2026-05-03 02:09:35 Collected 223500 rows after scanning 435967. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18954, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17081, 'cohere': 16961, 'chatgpt': 16905, 'gpt4': 16769, 'cohere-chat': 16830}
+2026-05-03 02:09:35 Collected 224000 rows after scanning 437250. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18960, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17174, 'cohere': 17068, 'chatgpt': 17007, 'gpt4': 16852, 'cohere-chat': 16939}
+2026-05-03 02:09:35 Collected 224500 rows after scanning 438482. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18964, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17261, 'cohere': 17153, 'chatgpt': 17106, 'gpt4': 16955, 'cohere-chat': 17061}
+2026-05-03 02:09:35 Collected 225000 rows after scanning 439818. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18970, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17358, 'cohere': 17245, 'chatgpt': 17191, 'gpt4': 17066, 'cohere-chat': 17170}
+2026-05-03 02:09:36 Collected 225500 rows after scanning 441111. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18978, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17468, 'cohere': 17359, 'chatgpt': 17275, 'gpt4': 17164, 'cohere-chat': 17256}
+2026-05-03 02:09:36 Collected 226000 rows after scanning 442403. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18982, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17569, 'cohere': 17458, 'chatgpt': 17393, 'gpt4': 17256, 'cohere-chat': 17342}
+2026-05-03 02:09:36 Collected 226500 rows after scanning 443635. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18986, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17666, 'cohere': 17557, 'chatgpt': 17501, 'gpt4': 17359, 'cohere-chat': 17431}
+2026-05-03 02:09:36 Collected 227000 rows after scanning 444753. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18995, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17763, 'cohere': 17657, 'chatgpt': 17596, 'gpt4': 17453, 'cohere-chat': 17536}
+2026-05-03 02:09:36 Collected 227500 rows after scanning 445904. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 18999, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17855, 'cohere': 17765, 'chatgpt': 17689, 'gpt4': 17560, 'cohere-chat': 17632}
+2026-05-03 02:09:36 Collected 228000 rows after scanning 447079. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19002, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 17950, 'cohere': 17880, 'chatgpt': 17797, 'gpt4': 17644, 'cohere-chat': 17727}
+2026-05-03 02:09:36 Collected 228500 rows after scanning 448256. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19015, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18058, 'cohere': 17969, 'chatgpt': 17894, 'gpt4': 17743, 'cohere-chat': 17821}
+2026-05-03 02:09:36 Collected 229000 rows after scanning 449423. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19024, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18146, 'cohere': 18059, 'chatgpt': 17987, 'gpt4': 17858, 'cohere-chat': 17926}
+2026-05-03 02:09:36 Collected 229500 rows after scanning 450603. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19030, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18264, 'cohere': 18159, 'chatgpt': 18072, 'gpt4': 17956, 'cohere-chat': 18019}
+2026-05-03 02:09:36 Collected 230000 rows after scanning 451676. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19033, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18386, 'cohere': 18248, 'chatgpt': 18185, 'gpt4': 18050, 'cohere-chat': 18098}
+2026-05-03 02:09:36 Collected 230500 rows after scanning 452759. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19037, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18476, 'cohere': 18343, 'chatgpt': 18284, 'gpt4': 18164, 'cohere-chat': 18196}
+2026-05-03 02:09:36 Collected 231000 rows after scanning 453803. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19039, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18589, 'cohere': 18432, 'chatgpt': 18388, 'gpt4': 18260, 'cohere-chat': 18292}
+2026-05-03 02:09:36 Collected 231500 rows after scanning 454878. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19044, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18689, 'cohere': 18522, 'chatgpt': 18487, 'gpt4': 18371, 'cohere-chat': 18387}
+2026-05-03 02:09:36 Collected 232000 rows after scanning 455921. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19052, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18786, 'cohere': 18622, 'chatgpt': 18593, 'gpt4': 18465, 'cohere-chat': 18482}
+2026-05-03 02:09:36 Collected 232500 rows after scanning 456919. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19055, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18872, 'cohere': 18723, 'chatgpt': 18693, 'gpt4': 18578, 'cohere-chat': 18579}
+2026-05-03 02:09:36 Collected 233000 rows after scanning 457883. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19059, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 18964, 'cohere': 18833, 'chatgpt': 18790, 'gpt4': 18673, 'cohere-chat': 18681}
+2026-05-03 02:09:36 Collected 233500 rows after scanning 458990. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19061, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19055, 'cohere': 18917, 'chatgpt': 18883, 'gpt4': 18792, 'cohere-chat': 18792}
+2026-05-03 02:09:37 Collected 234000 rows after scanning 460078. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19064, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19172, 'cohere': 19017, 'chatgpt': 18987, 'gpt4': 18885, 'cohere-chat': 18875}
+2026-05-03 02:09:37 Collected 234500 rows after scanning 461161. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19068, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19257, 'cohere': 19127, 'chatgpt': 19084, 'gpt4': 18988, 'cohere-chat': 18976}
+2026-05-03 02:09:37 Collected 235000 rows after scanning 462219. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19071, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19367, 'cohere': 19219, 'chatgpt': 19181, 'gpt4': 19099, 'cohere-chat': 19063}
+2026-05-03 02:09:37 Collected 235500 rows after scanning 463296. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19074, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19469, 'cohere': 19321, 'chatgpt': 19258, 'gpt4': 19205, 'cohere-chat': 19173}
+2026-05-03 02:09:37 Collected 236000 rows after scanning 464392. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19079, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19562, 'cohere': 19435, 'chatgpt': 19373, 'gpt4': 19289, 'cohere-chat': 19262}
+2026-05-03 02:09:37 Collected 236500 rows after scanning 465485. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19083, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19660, 'cohere': 19526, 'chatgpt': 19477, 'gpt4': 19391, 'cohere-chat': 19363}
+2026-05-03 02:09:37 Collected 237000 rows after scanning 466619. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19090, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19760, 'cohere': 19626, 'chatgpt': 19580, 'gpt4': 19484, 'cohere-chat': 19460}
+2026-05-03 02:09:37 Collected 237500 rows after scanning 467894. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19096, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19867, 'cohere': 19729, 'chatgpt': 19685, 'gpt4': 19571, 'cohere-chat': 19552}
+2026-05-03 02:09:37 Collected 238000 rows after scanning 469122. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19102, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 19952, 'cohere': 19854, 'chatgpt': 19784, 'gpt4': 19665, 'cohere-chat': 19643}
+2026-05-03 02:09:38 Collected 238500 rows after scanning 470469. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19103, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 20000, 'cohere': 19956, 'chatgpt': 19909, 'gpt4': 19767, 'cohere-chat': 19765}
+2026-05-03 02:09:38 Collected 239000 rows after scanning 472580. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19111, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 20000, 'cohere': 20000, 'chatgpt': 20000, 'gpt4': 19944, 'cohere-chat': 19945}
+2026-05-03 02:09:46 Collected 239500 rows after scanning 597851. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 19500, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 20000, 'cohere': 20000, 'chatgpt': 20000, 'gpt4': 20000, 'cohere-chat': 20000}
+2026-05-03 02:09:51 Collected 240000 rows after scanning 634138. Counts: {'mpt-chat': 20000, 'mpt': 20000, 'llama-chat': 20000, 'gpt2': 20000, 'human': 20000, 'mistral-chat': 20000, 'mistral': 20000, 'gpt3': 20000, 'cohere': 20000, 'chatgpt': 20000, 'gpt4': 20000, 'cohere-chat': 20000}
+2026-05-03 02:09:51 Final label counts:
+2026-05-03 02:09:51   mpt-chat: 20000
+2026-05-03 02:09:51   mpt: 20000
+2026-05-03 02:09:51   llama-chat: 20000
+2026-05-03 02:09:51   gpt2: 20000
+2026-05-03 02:09:51   human: 20000
+2026-05-03 02:09:51   mistral-chat: 20000
+2026-05-03 02:09:51   mistral: 20000
+2026-05-03 02:09:51   gpt3: 20000
+2026-05-03 02:09:51   cohere: 20000
+2026-05-03 02:09:51   chatgpt: 20000
+2026-05-03 02:09:51   gpt4: 20000
+2026-05-03 02:09:51   cohere-chat: 20000
+2026-05-03 02:09:51 Domain counts sample: [('abstracts', 240000)]
+2026-05-03 02:09:51 Attack counts sample: [('none', 33812), ('whitespace', 33492), ('upper_lower', 32837), ('synonym', 31925), ('paraphrase', 28815), ('number', 24776), ('perplexity_misspelling', 20723), ('insert_paragraphs', 19222), ('homoglyph', 7978), ('article_deletion', 4032), ('alternative_spelling', 1757), ('zero_width_space', 631)]
+2026-05-03 02:09:51 Using model split:
+2026-05-03 02:09:51   Known models: ['chatgpt', 'cohere', 'gpt3', 'gpt4', 'llama-chat', 'mpt', 'mpt-chat']
+2026-05-03 02:09:51   Wild unknown models used for stage-1 OOD training: ['cohere-chat', 'gpt2']
+2026-05-03 02:09:51   Validation unknown models: ['mistral']
+2026-05-03 02:09:51   Test unknown models: ['mistral-chat']
+2026-05-03 02:09:51 Split sizes:
+2026-05-03 02:09:51   llm_train: 98154
+2026-05-03 02:09:51   llm_val_known: 20754
+2026-05-03 02:09:51   llm_test_known: 21092
+2026-05-03 02:09:51   llm_wild_unknown_train: 27957
+2026-05-03 02:09:51   llm_wild_unknown_val: 5999
+2026-05-03 02:09:51   llm_wild_unknown_test: 6044
+2026-05-03 02:09:51   llm_val_unknown: 20000
+2026-05-03 02:09:51   llm_test_unknown: 20000
+2026-05-03 02:09:51   human_train: 13993
+2026-05-03 02:09:51   human_val: 3010
+2026-05-03 02:09:51   human_test: 2997
+2026-05-03 02:09:51 Loading encoder/tokenizer...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|██████████| 199/199 [00:00<00:00, 12772.64it/s]
+2026-05-03 02:09:55 Extracting llm_train: 98154 examples
+Embedding llm_train: 100%|██████████| 3068/3068 [01:50<00:00, 27.87it/s]
+2026-05-03 02:11:46 Extracting llm_val_known: 20754 examples
+Embedding llm_val_known: 100%|██████████| 649/649 [00:23<00:00, 27.52it/s]
+2026-05-03 02:12:09 Extracting llm_test_known: 21092 examples
+Embedding llm_test_known: 100%|██████████| 660/660 [00:23<00:00, 27.67it/s]
+2026-05-03 02:12:33 Extracting llm_wild_unknown_train: 27957 examples
+Embedding llm_wild_unknown_train: 100%|██████████| 874/874 [00:35<00:00, 24.54it/s]
+2026-05-03 02:13:09 Extracting llm_wild_unknown_val: 5999 examples
+Embedding llm_wild_unknown_val: 100%|██████████| 188/188 [00:07<00:00, 24.80it/s]
+2026-05-03 02:13:17 Extracting llm_wild_unknown_test: 6044 examples
+Embedding llm_wild_unknown_test: 100%|██████████| 189/189 [00:07<00:00, 24.81it/s]
+2026-05-03 02:13:24 Extracting llm_val_unknown: 20000 examples
+Embedding llm_val_unknown: 100%|██████████| 625/625 [00:25<00:00, 24.54it/s]
+2026-05-03 02:13:50 Extracting llm_test_unknown: 20000 examples
+Embedding llm_test_unknown: 100%|██████████| 625/625 [00:20<00:00, 30.50it/s]
+2026-05-03 02:14:10 Extracting human_train: 13993 examples
+Embedding human_train: 100%|██████████| 438/438 [00:18<00:00, 24.23it/s]
+2026-05-03 02:14:28 Extracting human_val: 3010 examples
+Embedding human_val: 100%|██████████| 95/95 [00:03<00:00, 24.23it/s]
+2026-05-03 02:14:32 Extracting human_test: 2997 examples
+Embedding human_test: 100%|██████████| 94/94 [00:03<00:00, 24.29it/s]
+2026-05-03 02:14:36 Training human-vs-LLM classifier on CPU...
+2026-05-03 02:14:52
+human_llm_val_known:
+              precision    recall  f1-score   support
+
+       human       0.90      0.98      0.94      3010
+         llm       1.00      0.98      0.99     20754
+
+    accuracy                           0.98     23764
+   macro avg       0.95      0.98      0.96     23764
+weighted avg       0.98      0.98      0.98     23764
+
+2026-05-03 02:14:52
+human_llm_test_known:
+              precision    recall  f1-score   support
+
+       human       0.90      0.97      0.93      2997
+         llm       1.00      0.98      0.99     21092
+
+    accuracy                           0.98     24089
+   macro avg       0.95      0.98      0.96     24089
+weighted avg       0.98      0.98      0.98     24089
+
+2026-05-03 02:14:52
+human_llm_wild_unknown:
+              precision    recall  f1-score   support
+
+       human       0.96      0.98      0.96      3010
+         llm       0.99      0.98      0.98      6044
+
+    accuracy                           0.98      9054
+   macro avg       0.97      0.98      0.97      9054
+weighted avg       0.98      0.98      0.98      9054
+
+2026-05-03 02:14:52
+human_llm_val_unknown:
+              precision    recall  f1-score   support
+
+       human       0.80      0.98      0.88      3010
+         llm       1.00      0.96      0.98     20000
+
+    accuracy                           0.96     23010
+   macro avg       0.90      0.97      0.93     23010
+weighted avg       0.97      0.96      0.97     23010
+
+2026-05-03 02:14:52
+human_llm_test_unknown:
+              precision    recall  f1-score   support
+
+       human       0.92      0.97      0.95      2997
+         llm       1.00      0.99      0.99     20000
+
+    accuracy                           0.99     22997
+   macro avg       0.96      0.98      0.97     22997
+weighted avg       0.99      0.99      0.99     22997
+
+2026-05-03 02:14:52 Fitting HTAO global DeepSVDD human detector on LLM embeddings...
+2026-05-03 02:14:53 HTAO human-as-OOD DeepSVDD threshold=0.036803; balanced_score=0.7439
+2026-05-03 02:14:53 Training known-LLM classifier on CPU...
+2026-05-03 02:16:08
+Known-LLM validation classification:
+              precision    recall  f1-score   support
+
+     chatgpt       0.82      0.83      0.82      2976
+      cohere       0.87      0.87      0.87      2970
+        gpt3       0.90      0.92      0.91      2974
+        gpt4       0.89      0.90      0.89      2930
+  llama-chat       0.94      0.92      0.93      2957
+         mpt       0.96      0.96      0.96      2974
+    mpt-chat       0.87      0.85      0.86      2973
+
+    accuracy                           0.89     20754
+   macro avg       0.89      0.89      0.89     20754
+weighted avg       0.89      0.89      0.89     20754
+
+2026-05-03 02:16:09
+===== open_set_wild_val known closed-set classification =====
+2026-05-03 02:16:09
+              precision    recall  f1-score   support
+
+     chatgpt       0.82      0.83      0.82      2976
+      cohere       0.87      0.87      0.87      2970
+        gpt3       0.90      0.92      0.91      2974
+        gpt4       0.89      0.90      0.89      2930
+  llama-chat       0.94      0.92      0.93      2957
+         mpt       0.96      0.96      0.96      2974
+    mpt-chat       0.87      0.85      0.86      2973
+
+    accuracy                           0.89     20754
+   macro avg       0.89      0.89      0.89     20754
+weighted avg       0.89      0.89      0.89     20754
+
+2026-05-03 02:16:09 open_set_wild_val/htao_energy: known_false_unknown=0.1842, unknown_detection=0.3799, auroc=0.5544
+2026-05-03 02:16:09 open_set_wild_val/htao_deepsvdd: known_false_unknown=0.5254, unknown_detection=0.6748, auroc=0.5539
+2026-05-03 02:16:09 open_set_wild_val/ensemble_rejector: known_false_unknown=0.3993, unknown_detection=0.7535, auroc=0.7303
+2026-05-03 02:16:09 Sample unknown predictions under ensemble_rejector:
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.021750152111053467, 'normalized_deepsvdd': 0.12222235649824142, 'energy': -13.939585609696696, 'rejector_prob_unknown': 0.34333523721413606, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'mpt', 'min_distance': 0.05043536424636841, 'normalized_deepsvdd': 0.37749654054641724, 'energy': -34.756877881882, 'rejector_prob_unknown': 0.604117320900788, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.053076982498168945, 'normalized_deepsvdd': 0.2982597053050995, 'energy': -39.67186420441045, 'rejector_prob_unknown': 0.8483965406212843, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.022596776485443115, 'normalized_deepsvdd': 0.12697985768318176, 'energy': -16.199967555969547, 'rejector_prob_unknown': 0.36238537585675523, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.032559871673583984, 'normalized_deepsvdd': 0.18296626210212708, 'energy': -17.072172348216284, 'rejector_prob_unknown': 0.45768486628091365, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.028548359870910645, 'normalized_deepsvdd': 0.16042406857013702, 'energy': -27.313789949916345, 'rejector_prob_unknown': 0.6129772472312366, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'mpt', 'min_distance': 0.03278636932373047, 'normalized_deepsvdd': 0.24539805948734283, 'energy': -14.57262644062074, 'rejector_prob_unknown': 0.39678304339157905, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.053076982498168945, 'normalized_deepsvdd': 0.2982597053050995, 'energy': -39.67186420441045, 'rejector_prob_unknown': 0.8483965406212843, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.029735028743743896, 'normalized_deepsvdd': 0.16709239780902863, 'energy': -12.923835015761668, 'rejector_prob_unknown': 0.6060420060953933, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.05382668972015381, 'normalized_deepsvdd': 0.3024725914001465, 'energy': -37.362591440025774, 'rejector_prob_unknown': 0.8249847921421557, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'llama-chat', 'min_distance': 0.06468147039413452, 'normalized_deepsvdd': 0.3634697198867798, 'energy': -39.39822353663086, 'rejector_prob_unknown': 0.8967405133383195, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'mpt', 'min_distance': 0.08191812038421631, 'normalized_deepsvdd': 0.6131373643875122, 'energy': -32.22271602488448, 'rejector_prob_unknown': 0.5615376385330545, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'gpt2', 'nearest_known_model': 'mpt', 'min_distance': 0.09109479188919067, 'normalized_deepsvdd': 0.6818225383758545, 'energy': -13.183719427564169, 'rejector_prob_unknown': 0.3573912166321507, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'mpt', 'min_distance': 0.12051087617874146, 'normalized_deepsvdd': 0.9019948244094849, 'energy': -9.151304007632518, 'rejector_prob_unknown': 0.3250827862174483, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'gpt3', 'min_distance': 0.016031742095947266, 'normalized_deepsvdd': 0.13250693678855896, 'energy': -9.673003912143963, 'rejector_prob_unknown': 0.437885511829595, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'gpt3', 'min_distance': 0.021475493907928467, 'normalized_deepsvdd': 0.1775011122226715, 'energy': -9.925094378195636, 'rejector_prob_unknown': 0.3064010334136517, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'cohere', 'min_distance': 0.02043306827545166, 'normalized_deepsvdd': 0.1692512482404709, 'energy': -8.65661040271388, 'rejector_prob_unknown': 0.21562546690051104, 'rejected_as_unknown': False}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'gpt3', 'min_distance': 0.01348501443862915, 'normalized_deepsvdd': 0.11145750433206558, 'energy': -8.698164565294185, 'rejector_prob_unknown': 0.4689983410099768, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'chatgpt', 'min_distance': 0.010698795318603516, 'normalized_deepsvdd': 0.08057097345590591, 'energy': -3.8543558015500023, 'rejector_prob_unknown': 0.7537920551843502, 'rejected_as_unknown': True}
+2026-05-03 02:16:09 {'true_unknown_model': 'cohere-chat', 'nearest_known_model': 'chatgpt', 'min_distance': 0.01901721954345703, 'normalized_deepsvdd': 0.14321574568748474, 'energy': -8.844685703497467, 'rejector_prob_unknown': 0.25745991668832874, 'rejected_as_unknown': False}
+2026-05-03 02:16:09
+===== open_set_val_heldout using wild-validation-tuned thresholds =====
+2026-05-03 02:16:09 Known closed-set classification:
+              precision    recall  f1-score   support
+
+     chatgpt       0.82      0.83      0.82      2976
+      cohere       0.87      0.87      0.87      2970
+        gpt3       0.90      0.92      0.91      2974
+        gpt4       0.89      0.90      0.89      2930
+  llama-chat       0.94      0.92      0.93      2957
+         mpt       0.96      0.96      0.96      2974
+    mpt-chat       0.87      0.85      0.86      2973
+
+    accuracy                           0.89     20754
+   macro avg       0.89      0.89      0.89     20754
+weighted avg       0.89      0.89      0.89     20754
+
+2026-05-03 02:16:09 open_set_val_heldout/htao_energy: known_false_unknown=0.1842, unknown_detection=0.0825, auroc=0.3185
+2026-05-03 02:16:09 open_set_val_heldout/htao_deepsvdd: known_false_unknown=0.5254, unknown_detection=0.9282, auroc=0.6796
+2026-05-03 02:16:09 open_set_val_heldout/wild_ood_rejector: known_false_unknown=0.3993, unknown_detection=0.5829, auroc=0.6236
+2026-05-03 02:16:10
+===== open_set_test_heldout using wild-validation-tuned thresholds =====
+2026-05-03 02:16:10 Known closed-set classification:
+              precision    recall  f1-score   support
+
+     chatgpt       0.83      0.81      0.82      3024
+      cohere       0.87      0.85      0.86      3002
+        gpt3       0.91      0.92      0.92      2980
+        gpt4       0.87      0.91      0.89      3015
+  llama-chat       0.94      0.94      0.94      3021
+         mpt       0.97      0.97      0.97      3055
+    mpt-chat       0.88      0.87      0.88      2995
+
+    accuracy                           0.90     21092
+   macro avg       0.90      0.90      0.90     21092
+weighted avg       0.90      0.90      0.90     21092
+
+2026-05-03 02:16:10 open_set_test_heldout/htao_energy: known_false_unknown=0.1648, unknown_detection=0.6331, auroc=0.8191
+2026-05-03 02:16:10 open_set_test_heldout/htao_deepsvdd: known_false_unknown=0.5235, unknown_detection=0.4255, auroc=0.4553
+2026-05-03 02:16:10 open_set_test_heldout/wild_ood_rejector: known_false_unknown=0.3936, unknown_detection=0.7420, auroc=0.7243
+2026-05-03 02:16:10 Primary energy gate: strategy=max_known_false_unknown, threshold=-6.699434, wild_val_known_false_unknown=0.1795, wild_val_unknown_detection=0.3744
+2026-05-03 02:16:11
+===== cascade_wild_val: human → energy unknown gate → known LLM classifier =====
+2026-05-03 02:16:11
+              precision    recall  f1-score   support
+
+     chatgpt       0.82      0.52      0.64      2976
+      cohere       0.65      0.59      0.62      2970
+        gpt3       0.87      0.82      0.84      2974
+        gpt4       0.90      0.80      0.85      2930
+       human       0.87      0.98      0.92      3010
+  llama-chat       0.86      0.85      0.86      2957
+         mpt       0.56      0.95      0.70      2974
+    mpt-chat       0.89      0.77      0.82      2973
+     unknown       0.37      0.36      0.37      5999
+
+    accuracy                           0.70     29763
+   macro avg       0.76      0.74      0.74     29763
+weighted avg       0.72      0.70      0.70     29763
+
+2026-05-03 02:16:11 cascade_wild_val/gate: known_false_unknown=0.1748, unknown_detection=0.3647, known_pass_rate=0.8101, known_attr_acc_given_passed=0.9349, known_correct_final=0.7574, human_recall=0.9751
+2026-05-03 02:16:11 cascade_wild_val/attribution_after_gate: raw_known_acc_before_gate=0.8930, known_pass_rate=0.8101, known_attr_acc_given_passed_gate=0.9349
+2026-05-03 02:16:12
+===== cascade_val_heldout: human → energy unknown gate → known LLM classifier =====
+2026-05-03 02:16:12
+              precision    recall  f1-score   support
+
+     chatgpt       0.88      0.52      0.65      2976
+      cohere       0.40      0.59      0.48      2970
+        gpt3       0.78      0.82      0.80      2974
+        gpt4       0.90      0.80      0.85      2930
+       human       0.73      0.98      0.84      3010
+  llama-chat       0.83      0.85      0.84      2957
+         mpt       0.17      0.95      0.29      2974
+    mpt-chat       0.75      0.77      0.76      2973
+     unknown       0.27      0.07      0.11     20000
+
+    accuracy                           0.46     43764
+   macro avg       0.63      0.71      0.62     43764
+weighted avg       0.49      0.46      0.42     43764
+
+2026-05-03 02:16:12 cascade_val_heldout/gate: known_false_unknown=0.1748, unknown_detection=0.0673, known_pass_rate=0.8101, known_attr_acc_given_passed=0.9349, known_correct_final=0.7574, human_recall=0.9751
+2026-05-03 02:16:12 cascade_val_heldout/attribution_after_gate: raw_known_acc_before_gate=0.8930, known_pass_rate=0.8101, known_attr_acc_given_passed_gate=0.9349
+2026-05-03 02:16:13
+===== cascade_test_heldout: human → energy unknown gate → known LLM classifier =====
+2026-05-03 02:16:13
+              precision    recall  f1-score   support
+
+     chatgpt       0.48      0.55      0.51      3024
+      cohere       0.76      0.63      0.69      3002
+        gpt3       0.85      0.83      0.84      2980
+        gpt4       0.81      0.82      0.82      3015
+       human       0.84      0.97      0.90      2997
+  llama-chat       0.49      0.89      0.63      3021
+         mpt       0.91      0.96      0.93      3055
+    mpt-chat       0.52      0.77      0.62      2995
+     unknown       0.79      0.62      0.69     20000
+
+    accuracy                           0.72     44089
+   macro avg       0.72      0.78      0.74     44089
+weighted avg       0.74      0.72      0.72     44089
+
+2026-05-03 02:16:13 cascade_test_heldout/gate: known_false_unknown=0.1542, unknown_detection=0.6179, known_pass_rate=0.8306, known_attr_acc_given_passed=0.9360, known_correct_final=0.7774, human_recall=0.9703
+2026-05-03 02:16:13 cascade_test_heldout/attribution_after_gate: raw_known_acc_before_gate=0.8965, known_pass_rate=0.8306, known_attr_acc_given_passed_gate=0.9360
+2026-05-03 02:16:13 Saving artifacts...
+wandb: Adding directory to artifact (open_set_detector)... Done. 0.0s

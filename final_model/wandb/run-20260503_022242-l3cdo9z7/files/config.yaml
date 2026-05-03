@@ -1,0 +1,191 @@
+_wandb:
+    value:
+        cli_version: 0.26.1
+        e:
+            kgs8185m6k6otteomczvz9y1qnphy8b9:
+                args:
+                    - --dataset_id
+                    - liamdugan/raid
+                    - --dataset_splits
+                    - train,extra
+                    - --target_models
+                    - human,chatgpt,gpt4,gpt3,gpt2,llama-chat,cohere,cohere-chat,mpt,mpt-chat,mistral,mistral-chat
+                    - --known_models
+                    - llama-chat,mpt,mpt-chat,chatgpt,gpt3,gpt4,cohere
+                    - --wild_unknown_models
+                    - gpt2,cohere-chat
+                    - --val_unknown_models
+                    - mistral
+                    - --test_unknown_models
+                    - mistral-chat
+                    - --samples_per_label
+                    - "20000"
+                    - --balance_domains
+                    - --target_domains
+                    - abstracts,books,news,poetry,recipes,reddit,reviews,wiki
+                    - --samples_per_label_per_domain
+                    - "2500"
+                    - --num_samples
+                    - "-1"
+                    - --include_adversarial
+                    - --shuffle_buffer
+                    - "100000"
+                    - --batch_size
+                    - "32"
+                    - --max_length
+                    - "512"
+                    - --amp_dtype
+                    - fp16
+                    - --energy_gate_strategy
+                    - max_known_false_unknown
+                    - --energy_gate_max_known_false_unknown
+                    - "0.18"
+                    - --output_dir
+                    - open_set_detector
+                    - --use_wandb
+                    - --wandb_project
+                    - open-set-detector
+                    - --wandb_entity
+                    - ""
+                    - --wandb_mode
+                    - online
+                    - --wandb_run_name
+                    - openworld-raid-local-0
+                    - --wandb_log_every
+                    - "5"
+                codePath: train_open_set_chtc.py
+                codePathLocal: train_open_set_chtc.py
+                cpu_count: 48
+                cpu_count_logical: 96
+                cudaVersion: "12.8"
+                disk:
+                    /:
+                        total: "539711971328"
+                        used: "266876723200"
+                email: rrao27@wisc.edu
+                executable: /opt/conda/bin/python
+                gpu: NVIDIA L40S
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ada
+                      cudaCores: 18176
+                      memoryTotal: "48305799168"
+                      name: NVIDIA L40S
+                      uuid: GPU-ca48bd26-8050-1d72-65bb-be9bc1469039
+                host: blengerichgpu4000.chtc.wisc.edu
+                memory:
+                    total: "540704067584"
+                os: Linux-5.14.0-620.el9.x86_64-x86_64-with-glibc2.35
+                program: /var/lib/condor/execute/slot2/dir_2688161/scratch/train_open_set_chtc.py
+                python: CPython 3.11.10
+                root: open_set_detector
+                startedAt: "2026-05-03T02:22:42.031216Z"
+                username: rrao27
+                writerId: kgs8185m6k6otteomczvz9y1qnphy8b9
+        m:
+            - "1": global_step
+              "6":
+                - 3
+              "7": []
+            - "2": '*'
+              "6": []
+              "7": []
+        python_version: 3.11.10
+        t:
+            "1":
+                - 1
+                - 5
+                - 11
+                - 49
+                - 51
+                - 53
+            "2":
+                - 1
+                - 5
+                - 11
+                - 41
+                - 49
+                - 51
+                - 53
+            "3":
+                - 2
+                - 7
+                - 13
+                - 16
+                - 41
+                - 61
+            "4": 3.11.10
+            "5": 0.26.1
+            "6": 5.7.0
+            "12": 0.26.1
+            "13": linux-x86_64
+amp_dtype:
+    value: fp16
+balance_domains:
+    value: true
+batch_size:
+    value: 32
+dataset_config:
+    value: ""
+dataset_id:
+    value: liamdugan/raid
+dataset_split:
+    value: train
+dataset_splits:
+    value: train,extra
+embedding_layer:
+    value: -2
+energy_gate_max_known_false_unknown:
+    value: 0.18
+energy_gate_strategy:
+    value: max_known_false_unknown
+energy_temperature:
+    value: 1
+include_adversarial:
+    value: true
+known_models:
+    value: llama-chat,mpt,mpt-chat,chatgpt,gpt3,gpt4,cohere
+max_length:
+    value: 512
+model_id:
+    value: StyleDistance/styledistance
+num_samples:
+    value: -1
+output_dir:
+    value: open_set_detector
+run_triage_ablation:
+    value: false
+samples_per_label:
+    value: 20000
+samples_per_label_per_domain:
+    value: 2500
+seed:
+    value: 42
+shuffle_buffer:
+    value: 100000
+start_time:
+    value: 1.7777749619139688e+09
+svdd_radius_quantile:
+    value: 0.95
+target_domains:
+    value: abstracts,books,news,poetry,recipes,reddit,reviews,wiki
+target_models:
+    value: human,chatgpt,gpt4,gpt3,gpt2,llama-chat,cohere,cohere-chat,mpt,mpt-chat,mistral,mistral-chat
+test_unknown_models:
+    value: mistral-chat
+use_wandb:
+    value: true
+val_unknown_models:
+    value: mistral
+wandb_entity:
+    value: ""
+wandb_log_every:
+    value: 5
+wandb_mode:
+    value: online
+wandb_project:
+    value: open-set-detector
+wandb_run_name:
+    value: openworld-raid-local-0
+wild_unknown_models:
+    value: gpt2,cohere-chat

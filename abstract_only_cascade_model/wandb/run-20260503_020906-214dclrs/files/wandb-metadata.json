@@ -1,0 +1,83 @@
+{
+  "os":  "Linux-5.14.0-620.el9.x86_64-x86_64-with-glibc2.35",
+  "python":  "CPython 3.11.10",
+  "startedAt":  "2026-05-03T02:09:06.793944Z",
+  "args":  [
+    "--dataset_id",
+    "liamdugan/raid",
+    "--dataset_splits",
+    "train,extra",
+    "--target_models",
+    "human,chatgpt,gpt4,gpt3,gpt2,llama-chat,cohere,cohere-chat,mpt,mpt-chat,mistral,mistral-chat",
+    "--known_models",
+    "llama-chat,mpt,mpt-chat,chatgpt,gpt3,gpt4,cohere",
+    "--wild_unknown_models",
+    "gpt2,cohere-chat",
+    "--val_unknown_models",
+    "mistral",
+    "--test_unknown_models",
+    "mistral-chat",
+    "--samples_per_label",
+    "20000",
+    "--num_samples",
+    "-1",
+    "--include_adversarial",
+    "--shuffle_buffer",
+    "100000",
+    "--batch_size",
+    "32",
+    "--max_length",
+    "512",
+    "--amp_dtype",
+    "fp16",
+    "--energy_gate_strategy",
+    "max_known_false_unknown",
+    "--energy_gate_max_known_false_unknown",
+    "0.18",
+    "--output_dir",
+    "open_set_detector",
+    "--use_wandb",
+    "--wandb_project",
+    "open-set-detector",
+    "--wandb_entity",
+    "",
+    "--wandb_mode",
+    "online",
+    "--wandb_run_name",
+    "openworld-raid-local-0",
+    "--wandb_log_every",
+    "5"
+  ],
+  "program":  "/var/lib/condor/execute/slot2/dir_2682562/scratch/train_open_set_chtc.py",
+  "codePath":  "train_open_set_chtc.py",
+  "codePathLocal":  "train_open_set_chtc.py",
+  "email":  "rrao27@wisc.edu",
+  "root":  "open_set_detector",
+  "host":  "blengerichgpu4000.chtc.wisc.edu",
+  "username":  "rrao27",
+  "executable":  "/opt/conda/bin/python",
+  "cpu_count":  48,
+  "cpu_count_logical":  96,
+  "gpu":  "NVIDIA L40S",
+  "gpu_count":  1,
+  "disk":  {
+    "/":  {
+      "total":  "539711971328",
+      "used":  "266876723200"
+    }
+  },
+  "memory":  {
+    "total":  "540704067584"
+  },
+  "gpu_nvidia":  [
+    {
+      "name":  "NVIDIA L40S",
+      "memoryTotal":  "48305799168",
+      "cudaCores":  18176,
+      "architecture":  "Ada",
+      "uuid":  "GPU-ca48bd26-8050-1d72-65bb-be9bc1469039"
+    }
+  ],
+  "cudaVersion":  "12.8",
+  "writerId":  "w64mpxjncse9di5o5u6t1puocehforsw"
+}

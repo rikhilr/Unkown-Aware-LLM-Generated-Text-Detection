@@ -1,0 +1,24 @@
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_setup.py:_flush():81] Current SDK version is 0.26.1
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_setup.py:_flush():81] Configure stats pid to 83
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_init.py:setup_run_log_directory():723] Logging user logs to open_set_detector/wandb/run-20260503_020906-214dclrs/logs/debug.log
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_init.py:setup_run_log_directory():724] Logging internal logs to open_set_detector/wandb/run-20260503_020906-214dclrs/logs/debug-internal.log
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_init.py:init():850] calling init triggers
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_init.py:init():855] wandb.init called with sweep_config: {}
+config: {'model_id': 'StyleDistance/styledistance', 'dataset_id': 'liamdugan/raid', 'dataset_config': '', 'dataset_split': 'train', 'dataset_splits': 'train,extra', 'target_models': 'human,chatgpt,gpt4,gpt3,gpt2,llama-chat,cohere,cohere-chat,mpt,mpt-chat,mistral,mistral-chat', 'known_models': 'llama-chat,mpt,mpt-chat,chatgpt,gpt3,gpt4,cohere', 'wild_unknown_models': 'gpt2,cohere-chat', 'val_unknown_models': 'mistral', 'test_unknown_models': 'mistral-chat', 'num_samples': -1, 'samples_per_label': 20000, 'include_adversarial': True, 'shuffle_buffer': 100000, 'batch_size': 32, 'max_length': 512, 'embedding_layer': -2, 'amp_dtype': 'fp16', 'seed': 42, 'output_dir': 'open_set_detector', 'energy_temperature': 1.0, 'energy_gate_strategy': 'max_known_false_unknown', 'energy_gate_max_known_false_unknown': 0.18, 'run_triage_ablation': False, 'svdd_radius_quantile': 0.95, 'use_wandb': True, 'wandb_project': 'open-set-detector', 'wandb_entity': '', 'wandb_mode': 'online', 'wandb_run_name': 'openworld-raid-local-0', 'wandb_log_every': 5, 'start_time': 1777774146.625175, '_wandb': {}}
+2026-05-03 02:09:06,794 INFO    MainThread:83 [wandb_init.py:init():898] starting backend
+2026-05-03 02:09:07,006 INFO    MainThread:83 [wandb_init.py:init():913] sending inform_init request
+2026-05-03 02:09:07,181 INFO    MainThread:83 [wandb_init.py:init():918] backend started and connected
+2026-05-03 02:09:07,182 INFO    MainThread:83 [wandb_init.py:init():988] updated telemetry
+2026-05-03 02:09:07,184 INFO    MainThread:83 [wandb_init.py:init():1011] communicating run to backend with 90.0 second timeout
+2026-05-03 02:09:07,391 INFO    MainThread:83 [wandb_init.py:init():1056] starting run threads in backend
+2026-05-03 02:09:07,442 INFO    MainThread:83 [wandb_run.py:_console_start():2554] atexit reg
+2026-05-03 02:09:07,442 INFO    MainThread:83 [wandb_run.py:_redirect():2403] redirect: wrap_raw
+2026-05-03 02:09:07,442 INFO    MainThread:83 [wandb_run.py:_redirect():2472] Wrapping output streams.
+2026-05-03 02:09:07,442 INFO    MainThread:83 [wandb_run.py:_redirect():2495] Redirects installed.
+2026-05-03 02:09:07,444 INFO    MainThread:83 [wandb_init.py:init():1094] run started, returning control to user process
+2026-05-03 02:16:13,910 INFO    MainThread:83 [wandb_run.py:_finish():2321] finishing run rrao27-university-of-wisconsin-madison/open-set-detector/214dclrs
+2026-05-03 02:16:13,911 INFO    MainThread:83 [wandb_run.py:_atexit_cleanup():2520] got exitcode: 0
+2026-05-03 02:16:13,911 INFO    MainThread:83 [wandb_run.py:_restore():2502] restore
+2026-05-03 02:16:13,911 INFO    MainThread:83 [wandb_run.py:_restore():2508] restore done
+2026-05-03 02:16:16,124 INFO    MainThread:83 [wandb_run.py:_footer_sync_info():3889] logging synced files
