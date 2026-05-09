@@ -43,6 +43,30 @@ HOUND/                               # HOUND baseline results
 report.pdf                           # Final report
 ```
 
+## Installation
+
+Python 3.12 is required. Training requires a CUDA GPU; inference and UMAP analysis can run on CPU or MPS.
+
+```bash
+python -m venv unknown-aware
+source unknown-aware/bin/activate   # Windows: unknown-aware\Scripts\activate
+
+# Core dependencies (training + inference):
+pip install torch "transformers>=4.40" "datasets>=2.19" scikit-learn numpy pandas tqdm joblib
+
+# Optional — W&B experiment tracking:
+pip install wandb
+
+# Optional — UMAP analysis figure:
+pip install umap-learn matplotlib
+```
+
+Alternatively, activate the existing virtualenv that ships with the repo (macOS arm64 only):
+
+```bash
+source unknown-aware/bin/activate
+```
+
 ## Training
 
 ```bash
@@ -83,4 +107,14 @@ Output JSON:
 
 ## Notes
 
-There was equal collaboration between all team members. We worked in person and split into pairs to perform EDA on each of the two datasets, which is why only two people appear in the commit history.
+There was equal collaboration between all team members for the code and report. 
+Built on:
+
+- **StyleDistance** (Patel et al.) — stylistic embedding model
+- **HTAO** (Zeng et al.) — energy-based OOD detection for text
+- **STUD** (Du et al.) — student-teacher uncertainty for LLM detection
+- **SCONE** (Bai et al.) — contrastive OOD learning
+- **Energy-based OOD detection** (Liu et al., 2020) — energy scoring for out-of-distribution detection
+
+
+
